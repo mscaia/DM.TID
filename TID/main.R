@@ -1,22 +1,22 @@
 # Question 1
 # Création d'une matrice des effectifs
 effectifs <- matrix(c(
-  27.8, 189.7, 70.0, 119.6, 187.1, 76.9,  # Femmes - Agriculteurs
-  117.4, 914.0, 357.9, 556.1, 525.8, 184.8,  # Femmes - Artisans
-  564.9, 2638.5, 1209.0, 1429.5, 1161.6, 360.0,  # Femmes - Cadres
-  1353.7, 3735.7, 1840.7, 1895.0, 1507.8, 256.2,  # Femmes - Professions intermédiaires
-  1570.9, 3486.4, 1605.6, 1880.9, 1819.6, 397.0,  # Femmes - Employés
-  1271.6, 2648.6, 1285.9, 1362.7, 1300.4, 180.5,  # Femmes - Ouvriers
-  24.2, 146.0, 56.2, 89.8, 138.0, 43.4,  # Hommes - Agriculteurs
-  79.2, 645.6, 258.4, 387.2, 378.7, 128.7,  # Hommes - Artisans
-  315.7, 1538.5, 685.3, 853.2, 719.0, 240.1,  # Hommes - Cadres
-  613.3, 1750.4, 834.7, 915.7, 755.9, 123.7,  # Hommes - Professions intermédiaires
-  476.0, 865.5, 449.5, 416.0, 329.8, 58.3,  # Hommes - Employés
-  1085.8, 2133.9, 1068.4, 1065.4, 987.9, 130.1  # Hommes - Ouvriers
+  27.8, 70.0, 119.6, 187.1, 76.9,  # Femmes - Agriculteurs
+  117.4,  357.9, 556.1, 525.8, 184.8,  # Femmes - Artisans
+  564.9,  1209.0, 1429.5, 1161.6, 360.0,  # Femmes - Cadres
+  1353.7,  1840.7, 1895.0, 1507.8, 256.2,  # Femmes - Professions intermédiaires
+  1570.9,  1605.6, 1880.9, 1819.6, 397.0,  # Femmes - Employés
+  1271.6,  1285.9, 1362.7, 1300.4, 180.5,  # Femmes - Ouvriers
+  24.2,  56.2, 89.8, 138.0, 43.4,  # Hommes - Agriculteurs
+  79.2,  258.4, 387.2, 378.7, 128.7,  # Hommes - Artisans
+  315.7,  685.3, 853.2, 719.0, 240.1,  # Hommes - Cadres
+  613.3,  834.7, 915.7, 755.9, 123.7,  # Hommes - Professions intermédiaires
+  476.0,  449.5, 416.0, 329.8, 58.3,  # Hommes - Employés
+  1085.8,  1068.4, 1065.5, 987.9, 130.1  # Hommes - Ouvriers
 ), nrow = 12, byrow = TRUE)
 
 # Noms des colonnes (groupes d'âge)
-colnames(effectifs) <- c("15-29", "30-49","30-39", "40-49", "50-59", "60+")
+colnames(effectifs) <- c("15-29","30-39", "40-49", "50-59", "60+")
 
 # Noms des lignes (combinaison sexe et catégorie socioprofessionnelle)
 rownames(effectifs) <- c("Femmes_Agriculteurs", "Femmes_Artisans", "Femmes_Cadres", 
