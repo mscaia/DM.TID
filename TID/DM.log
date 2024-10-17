@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.10)  15 OCT 2024 20:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.10)  17 OCT 2024 11:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -369,12 +369,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<ssd_logo.png, id=16, 301.125pt x 103.38625pt>
+<ssd_logo.png, id=20, 301.125pt x 103.38625pt>
 File: ssd_logo.png Graphic file (type png)
 <use ssd_logo.png>
 Package pdftex.def Info: ssd_logo.png  used on input line 37.
 (pdftex.def)             Requested size: 172.5pt x 59.22734pt.
-<logo_um_2022_rouge_RVB.png, id=18, 194.6472pt x 71.0655pt>
+<logo_um_2022_rouge_RVB.png, id=22, 194.6472pt x 71.0655pt>
 File: logo_um_2022_rouge_RVB.png Graphic file (type png)
 <use logo_um_2022_rouge_RVB.png>
 Package pdftex.def Info: logo_um_2022_rouge_RVB.png  used on input line 42.
@@ -386,57 +386,62 @@ Package pdftex.def Info: logo_um_2022_rouge_RVB.png  used on input line 42.
 \openout5 = `DM.toc'.
 
  [2]
-<CE.png, id=41, 793.96625pt x 435.6275pt>
+<CE.png, id=46, 793.96625pt x 435.6275pt>
 File: CE.png Graphic file (type png)
 <use CE.png>
 Package pdftex.def Info: CE.png  used on input line 60.
 (pdftex.def)             Requested size: 241.49895pt x 132.50392pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--80
+Underfull \hbox (badness 10000) in paragraph at lines 65--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--80
+Underfull \hbox (badness 10000) in paragraph at lines 65--81
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--92
+Underfull \hbox (badness 10000) in paragraph at lines 83--93
 
  []
 
 [3 </Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/CE.png>]
-Overfull \hbox (35.2785pt too wide) in paragraph at lines 96--101
+Overfull \hbox (35.2785pt too wide) in paragraph at lines 97--102
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 108--119
+Underfull \hbox (badness 10000) in paragraph at lines 109--120
 
  []
 
-[4] (/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.aux)
+
+Overfull \hbox (24.72287pt too wide) in paragraph at lines 140--146
+ [][] 
+ []
+
+[4] [5] (/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
 Package rerunfilecheck Info: File `DM.out' has not changed.
-(rerunfilecheck)             Checksum: 1439170D13D60AFE5385356E9EECFF0E;355.
+(rerunfilecheck)             Checksum: C42F85E44041845BAAEEF8E7F64C65F8;566.
  ) 
 Here is how much of TeX's memory you used:
- 12640 strings out of 474116
- 199240 string characters out of 5743681
- 1941187 words of memory out of 5000000
- 34827 multiletter control sequences out of 15000+600000
+ 12646 strings out of 474116
+ 199305 string characters out of 5743681
+ 1945187 words of memory out of 5000000
+ 34830 multiletter control sequences out of 15000+600000
  567785 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,9n,79p,340b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.pdf" (4 pages, 350739 bytes).
+ 75i,9n,79p,344b,448s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.pdf" (5 pages, 364422 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 17 named destinations out of 1000 (max. 500000)
- 40 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 PDF objects out of 1000 (max. 8388607)
+ 101 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 48 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,10 +1,10 @@
 # Fdb version 4
-["pdflatex"] 1729016714.35254 "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.tex" "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.pdf" "DM" 1729016715.39147 0
+["pdflatex"] 1729155664.13087 "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.tex" "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.pdf" "DM" 1729155665.08472 0
   "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/CE.png" 1729011568.25685 233269 eda566f962874e58ace3e4f8cb132994 ""
-  "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.aux" 1729016715.32832 1526 183710675488d50e87ac25c402826ceb "pdflatex"
-  "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.out" 1729016715.32881 355 1439170d13d60afe5385356e9eecff0e "pdflatex"
-  "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.tex" 1729016714.19984 4556 de5405474aaff0f369546253db11fd8e ""
-  "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.toc" 1729016715.32905 219 18e1c00e34446d9efa553eb9f42e5c91 "pdflatex"
+  "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.aux" 1729155665.01963 1884 0f064a28c8c3e4fdf71fa5bd0836a141 "pdflatex"
+  "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.out" 1729155665.02009 566 c42f85e44041845baaeef8e7f64c65f8 "pdflatex"
+  "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.tex" 1729155664.03817 6279 f31fc9bfe8acebe73463047f3d79326a ""
+  "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.toc" 1729155665.02031 314 d81b76631c362ac142ce79130077218e "pdflatex"
   "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/logo_um_2022_rouge_RVB.png" 1729011361.36366 57225 0563e21fbd638a73c1b747b9a6e97692 ""
   "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/ssd_logo.png" 1729011344.1426 11882 cab918edf4da7a396fed5ada81d0b6cf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -47,6 +47,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb" 1248133631 33993 9b89b85fd2d9df0482bd47194d1d3bf3 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1575674566 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""

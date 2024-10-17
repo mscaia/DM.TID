@@ -61,18 +61,19 @@ catégorie socioprofessionnelle ($C$) (source: INSEE, enquête emploi 2016).
   \caption{Tableau répartissant la population active occupée selon des catégories }
 \end{figure}
 \subsection{Modélisation et variable}
+\label{1.1}
 Tout d'abord de manière intuitive, nous avons envie de modéliser la variable
 socioprofessionnelle avec les deux autres. Cependant, nous devons
 le montrer de manière formelle. Grâce au code fourni dans la partie \ref{sec : Annexe},
 nous calculons l'information mutuelle de chacune des variables.\\\\
 Premièrement, nous calculons l'entropie de chacune de ces variables.\\
-Pour la variable $A$, nous avons le tableau suivant (en \%). 
+Pour la variable $A$, nous avons le tableau suivant (en fréquence). 
 \begin{table}[ht]
   \centering
   \begin{tabular}{|l|l|l|l|l|l|l|}
     \hline
     & 15-29 ans  & 30-39 ans  & 40-49 ans  & 50-59 ans  & 60+ ans \\ \hline
-    Age(\%) & 0.1866 & 0.2419 & 0.2730 & 0.2441 & 0.0542 \\ \hline
+    Age & 0.1866 & 0.2419 & 0.2730 & 0.2441 & 0.0542 \\ \hline
   \end{tabular}
   \caption{Distribution par âge ($A$)}
 \end{table}
@@ -134,6 +135,67 @@ A présent, nous devons calculer les valeurs suivantes : $H(A,S)$, $H(A,C)$ et $
     
   \end{table}
 
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|l|l|l|l|l|l|}
+  \hline
+         & Agriculteur & Artisans & Cadres & Profession IN & Employes & Ouvrier \\ \hline
+    Femmes & 0.0119      & 0.0433   & 0,1175 & 0.1705        & 0.1810   & 0.1344  \\ \hline
+    Homme  & 0.0087      & 0.0307   & 0,0700 & 0.0807        & 0.0430   & 0.1079  \\ \hline
+    \end{tabular}
+    \caption{Distribution jointe ($C$) et ($S$)}
+\end{table}
+Nous obtenons les valeurs suivantes.
+\[
+H(A,S)=3,1092 \hspace{1 cm} H(A,C)= 4,4817 \hspace{1cm} H(C,S)=3,2242
+\]
+De plus, nous obtenons pour $H(A,S,C)$ la valeur suivante.
+\[
+  H(A,C,S) = -\sum_{n = 1}^{72}p_i\log_2(p_i)=5,3778
+\]
+Nous pouvons calculer les informations mutuelles.
+\[
+I(C,(AS))=H(C)+H(A,S)-H(A,S,C) = 0,0580 \\
+\]
+\[
+I(A,(SC))= 0,029803
+\]
+\[
+I(S,(CA))=0,029813
+\]
+Cherchons le rapport entre l'information mutuelle et la variable conditionnée le plus élevé.
+\[
+R_1 = \frac{I(C,(AS))}{H(A,C)}=0,0187
+\]
+\[
+R_2 = \frac{I(A,(SC)))}{H(S,C)}=0,0092
+\]
+\[
+R_3 = \frac{I(S,(CA)))}{H(A,C)}=0,0066
+\]
+Le rapport $R_1$ est le plus élevé. Donc c'est la variable $C$ modélisé par les deux autres ($A$ et $S$) qui nous donne le plus d'information.
+\subsection{Arbre de segmentation binaire}
+Grâce à la partie \ref{1.1}, nous pouvons calculer les informations mutuelles suivantes.
+\[
+I(A,S) = H(A) + H(S) - H(A,S) = 5,1104*10^{-5}
+\]
+\[
+I(A,C) = 0,02830
+\]
+\[
+I(S,C)= 0,02831
+\]
+Faisons, la somme de ses informations mutuelles avec chacune des deux autres.
+\[
+\bar{I_A} = I(A,S) + I(A,C) = 0,02835
+\]
+\[
+\bar{I_S}= 0,02836 
+\]
+\[
+\bar{I_C} = 0,0566
+\]
+Nous avons donc $\bar{I_C}$ qui est le plus élevé. Ainsi, l'arbre de segmentation commencera avec la variable $C$.
 \section{ANNEXE}
 \label{sec : Annexe}
 \end{document}
