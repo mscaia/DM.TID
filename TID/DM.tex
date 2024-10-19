@@ -198,6 +198,124 @@ Faisons, la somme de ses informations mutuelles avec chacune des deux autres.
 Nous avons donc $\bar{I_C}$ qui est le plus élevé. Ainsi, l'arbre de segmentation commencera avec la variable $C$.
 
 
+
+
+
+
+\newpage
+\section{Exercice 2}
+\subsection{Recodages}
+
+\subsubsection{Recodage en 2 variables}
+
+En agrégeant seulement les classes contigues, nous avons 4 possibilités de regroupement binaire de 
+X.
+\\
+
+\[
+Z1 =\{ \{0 \% \} , \{0 - 0.5 \% ,0.5-1 \% ,1-3 \% ,>3 \% \} \}  
+\]
+\[
+Z1 =\{ \{0 \% , 0 - 0.5 \%  \} , \{0.5-1 \% ,1-3 \% ,>3 \% \} \}
+\]
+\[
+Z1 =\{ \{0 \%, 0 - 0.5 \% ,0.5-1 \%  \} , \{1-3 \% ,>3 \% \} \}
+\]
+\[
+Z1 =\{ \{0 \% , 0 - 0.5 \% ,0.5-1 \% ,1-3 \% \} , \{>3 \% \} \}
+\]
+\\
+
+L'entropie de chacun de ses recodages se calcule numeriquement et donne :
+
+\[
+H(Z1) = -(29/72*log2(29/72)+43/72*log2(43/72)) = 0.973
+\]
+\[
+H(Z2) = -(29/72*log2(29/72)+43/72*log2(43/72)) = 0.954
+\]
+\[
+H(Z3) = -(29/72*log2(29/72)+43/72*log2(43/72)) = 0.617
+\]
+\[
+H(Z4) = -(29/72*log2(29/72)+43/72*log2(43/72)) = 0.106
+\]
+\\
+Le meilleur recodage est donc le premiers c'est à dire :
+$Z1 =\{ \{0 \% \} , \{0 - 0.5 \% ,0.5-1 \% ,1-3 \% ,>3 \% \} \}$
+
+
+\subsubsection{Recodage en 3 variables}
+
+En procédant de la meme facon, on considere alors 6 cas :
+
+\[
+Z1 =\{ \{0 \% \} , \{0 - 0.5 \%\} ,\{0.5-1 \% ,1-3 \% ,>3 \% \} \}  
+\]
+\[
+  Z2 =\{ \{0 \% \} , \{0 - 0.5\%, 0.5-1 \% \} ,\{1-3 \% ,>3 \% \} \}
+\]
+\[
+  Z3 =\{ \{0 \% \} , \{0 - 0.5\%, 0.5-1 \% ,1-3 \%  \} ,\{>3 \% \} \}
+\]
+\[
+  Z4 =\{ \{0 \%, 0 - 0.5\%\} , \{ 0.5-1 \% ,1-3 \%  \} ,\{>3 \% \} \}
+\]
+\[
+  Z5 =\{ \{0 \%, 0 - 0.5\%\} , \{,  0.5-1 \% \} ,\{1-3 \% , >3 \% \} \}
+\]
+\[
+  Z6 =\{ \{0 \%, 0 - 0.5\%,  0.5-1 \% \} , \{1-3 \%  \} ,\{>3 \% \} \}
+\]
+\\
+Leur entropie est calculé numériquement :
+\[
+H(Z1) = 1.541
+\]
+\[
+H(Z2) = 1.462
+\]
+\[
+H(Z3) = 1.068
+\]
+\[
+H(Z4) = 1.040
+\]
+\[
+H(Z5) = 1.320
+\]
+\[
+H(Z6) = 0.684
+\]
+\\
+
+
+
+\subsection{Le meilleur recodage de X pour prédire Y }
+
+\[
+I(Z1,Y) = 0.147
+\]
+
+\[
+I(Z2,Y) = 0.091
+\]
+
+\[
+I(Z3,Y) = 0.033
+\]
+
+\[
+I(Z4,Y) = 0.024
+\]
+
+L'information mutuelle est plus grande lorsque l'on considere le recodage Z1.
+Cela signifie que Z1 est le meilleur recodage qui permet de prédir Y.
+
+
+
+
+\newpage
 \section{ANNEXE}
 \label{sec : Annexe}
 \end{document}
