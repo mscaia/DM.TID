@@ -100,4 +100,22 @@ IY1Y3=Y1 + Y3 - Y1Y3
 
 print(IY1Y2)
 print(IY1Y3)
+
+#%%
+import numpy as np
+####### Pour chapo raplapla
+
+Z1= -(2/3*np.log(2/3)+1/3*np.log(1/3))
+Z3 = -(1/3*np.log(1/3)+2/3*np.log(2/3))
+Z4 =-(1/3*np.log(1/3)+2/3*np.log(2/3))
+
+#Z1Z3= 
+Z1Z4= -(1/3*np.log(1/3)+1/3*np.log(1/3)+1/3*np.log(1/3))
+Z3Z4= -(1/3*np.log(1/3)+1/3*np.log(1/3)+1/3*np.log(1/3))
+
+IZ1Z4= Z1 + Z4 - Z1Z4
+IZ3Z4= Z3 + Z4 - Z3Z4
+
+print(IZ1Z4)
+print(IZ3Z4)
 # %%

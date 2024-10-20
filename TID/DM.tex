@@ -9,6 +9,9 @@
 \usepackage{hyperref}
 \usepackage{fancybox}
 \usepackage{booktabs}
+\usepackage{tikz}
+\usepackage[margin=2cm]{geometry}
+\usetikzlibrary{shapes, arrows.meta, positioning}
 \usepackage[labelfont=bf, font=small]{caption}  % Pour personnaliser le titre de la figure
 
 
@@ -496,14 +499,126 @@ $I(X_1,X_4)=0.216$ ;
 $I(X_3,X_4)=0.216$ ;
 \\
 On a alors :
+\[
+\bar{I_1}=I(X_1,X_3) + I(X_1,X_4)= 0.685 
+\]
+\[
+\bar{I_3}=I(X_1,X_3) + I(X_3,X_4)= 0.432 
+\]
+\[
+\bar{I_4}=I(X_1,X_4) + I(X_3,X_4)= 0.432
+\]
 
-
+On choisit alors pour les chapeaux arrondi 
     
 
 
 \subsubsection{Chapeau de forme plat}
+Si on considère que les chapeaux de formes plat, on obtient les tableaux suivant: 
+
+\begin{table}[H]
+  \centering
+  \caption{X1 et X3 avec chapeau plat}
+  \begin{tabular}{|l|l|l|}
+  \hline
+  X1\textbackslash{}X3 & E & F \\ \hline
+  O                    & 0 & 2 \\ \hline
+  N                    & 0 & 1 \\ \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{X1 et X4 avec chapeau plat}
+  \begin{tabular}{|l|l|l|l|}
+  \hline
+  X1\textbackslash{}X4 & b & j & r \\ \hline
+  O                    & 1 & 1 & 0 \\ \hline
+  N                    & 0 & 1 & 0 \\ \hline
+  \end{tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+  \caption{X3 et X4 avec chapeau plat}
+  \begin{tabular}{|l|l|l|l|}
+  \hline
+  X3\textbackslash{}X4 & b & j & r \\ \hline
+  E                    & 0 & 1 & 0 \\ \hline
+  F                    & 1 & 1 & 0 \\ \hline
+  \end{tabular}
+\end{table}
+
+Les information mutuelles sont alors :
+\[
+I(X_1,X_3)= 0;
+\]
+\[
+I(X_1,X_4)= 0.174 ;
+\]
+\[
+I(X_3,X_4)= 0.174 ;
+\]
+
+Donc on obtient :
+
+\[
+\bar{I_1}= 0.174
+\]
+\[
+\bar{I_3}= 0.174
+\]
+\[
+\bar{I_4}= 0,348
+\]
 
 
+\subsection{Arbre de discrimination}
+
+Avec toutes les informations mutuelles calculé, on obtient alors l'arbre suivant :
+
+\begin{figure}[htbp]
+  \centering
+  \resizebox{\textwidth}{!}{
+  \begin{tikzpicture}[
+    every node/.style={draw, rectangle, rounded corners, align=center, minimum size=6mm, font=\scriptsize},
+    level 1/.style={sibling distance=100mm},
+    level 2/.style={sibling distance=100mm},
+    level 3/.style={sibling distance=50mm},
+    level 4/.style={sibling distance=25mm},
+    edge from parent/.style={draw, -{Latex[length=2mm]}, thick},
+    level distance=35mm
+  ]
+  
+  \node {Chapeau}
+    child {node {Pointu}
+        child {node {Non comestible}}
+    }
+    child {node {Arrondi}
+        child {node {Couleur}
+          child {node {Brun}
+              child {node {Comestible}}
+          }
+          child {node {Jaune}
+              child {node {Comestible} edge from parent node[left] {épais}}
+              child {node {Non comestible} edge from parent node[right] {fin}}
+          }
+        }
+    }
+    child {node {Plat}
+        child {node {Couleur}
+          child {node {Brun}
+              child {node {Comestible}}
+          }
+          child {node {Jaune}
+              child {node {Comestible} edge from parent node[left] {Champignon d}}
+              child {node {Non comestible} edge from parent node[right] {Champignon j}}
+          }
+        }
+    };
+  \end{tikzpicture}
+  }
+\end{figure}
 
 
 \newpage
