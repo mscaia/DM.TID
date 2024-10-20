@@ -6,4 +6,13 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Recodage en 2 variables}{6}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Recodage en 3 variables}{6}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Le meilleur recodage de X pour prédire Y }{7}{subsection.2.2}%
-\contentsline {section}{\numberline {3}ANNEXE}{8}{section.3}%
+\contentsline {section}{\numberline {3}Exercice 3}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Description}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Calculs}{9}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Détails pour le premier calcul}{9}{subsubsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.3}Informations mutuelles totales}{10}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}Information mutuelle par forme}{10}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Chapeau de forme pointu}{10}{subsubsection.3.4.1}%
+\contentsline {subsubsection}{\numberline {3.4.2}Chapeau de forme arrondi}{10}{subsubsection.3.4.2}%
+\contentsline {subsubsection}{\numberline {3.4.3}Chapeau de forme plat}{11}{subsubsection.3.4.3}%
+\contentsline {section}{\numberline {4}ANNEXE}{12}{section.4}%

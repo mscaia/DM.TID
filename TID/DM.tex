@@ -8,6 +8,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{hyperref}
 \usepackage{fancybox}
+\usepackage{booktabs}
 \usepackage[labelfont=bf, font=small]{caption}  % Pour personnaliser le titre de la figure
 
 
@@ -268,7 +269,7 @@ Z1 =\{ \{0 \% \} , \{0 - 0.5 \%\} ,\{0.5-1 \% ,1-3 \% ,>3 \% \} \}
   Z6 =\{ \{0 \%, 0 - 0.5\%,  0.5-1 \% \} , \{1-3 \%  \} ,\{>3 \% \} \}
 \]
 \\
-Leur entropie est calculé numériquement :
+L'entropie est calculé numériquement :
 \[
 H(Z1) = 1.541
 \]
@@ -293,10 +294,57 @@ Et nous remarquons que le meilleure recodage en 3 variables est Z1.
 
 \subsection{Le meilleur recodage de X pour prédire Y }
 
-Il sagit ici d
+Il sagit ici de recoder X en réduisant l'incertitude sur Y.
+Nous devons donc trouver le $Z_k$ qui maximise l'information mutuelle entre $Z_k$ et Y.
+\\
+C'est à dire, trouvons le recodage $Z_k$ qui maximise :
+\[
+I(Z_k; Y) = \sum_{z\in Z_k} \sum_{y \in Y} p(z, y) \log \left( \frac{p(z, y)}{p(z)p(y)} \right)
+\]
+\\
+\\
+\underline{Détaillons le calcul pour le premier recodage :}
+
 
 \[
-I(Z1,Y) = 0.147
+p(Z1 = 0\%) = \frac{29}{72}, \quad p(Z1 \neq 0\%) = \frac{43}{72}
+\]
+\[
+p(Y = \text{Oui}) = \frac{29}{72}, \quad p(Y = \text{Non}) = \frac{43}{72}
+\]
+
+
+\[
+p(Z1 = 0\%, Y = \text{Oui}) = \frac{2}{72}, \quad p(Z1 = 0\%, Y = \text{Non}) = \frac{27}{72}
+\]
+\[
+p(Z1 \neq 0\%, Y = \text{Oui}) = \frac{20}{72}, \quad p(Z1 \neq 0\%, Y = \text{Non}) = \frac{23}{72}
+\]
+
+\[
+I(Z1; Y) = p(Z1 = 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z1 = 0\%, Y = \text{Oui})}{p(Z1 = 0\%) p(Y = \text{Oui})}\right) + \ldots
+\]
+\[
++ p(Z1 = 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z1 = 0\%, Y = \text{Non})}{p(Z1 = 0\%) p(Y = \text{Non})}\right) + \ldots
+\]
+\[
++ p(Z1 \neq 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z1 \neq 0\%, Y = \text{Oui})}{p(Z1 \neq 0\%) p(Y = \text{Oui})}\right) + \ldots
+\]
+\[
++ p(Z1 \neq 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z1 \neq 0\%, Y = \text{Non})}{p(Z1 \neq 0\%) p(Y = \text{Non})}\right)
+\]
+
+\[
+= 0.176
+\]
+
+
+
+
+En faisant de meme pour chaque information mutuelle, on trouve : 
+
+\[
+I(Z1,Y) = 0.178
 \]
 
 \[
@@ -311,8 +359,149 @@ I(Z3,Y) = 0.033
 I(Z4,Y) = 0.024
 \]
 
-L'information mutuelle est plus grande lorsque l'on considere le recodage Z1.
+L'information mutuelle la plus grande est le recodage Z1.
 Cela signifie que Z1 est le meilleur recodage qui permet de prédir Y.
+
+
+\newpage
+\section{Exercice 3}
+\subsection{Description}
+
+On considere le tableau recensent des especes de champignons suivant 4 variables qualitatifs. 
+
+\begin{table}[h]
+  \centering
+  \caption{Caractéristiques des espèces de champignons}
+  \begin{tabular}{@{}ccccc@{}}
+  \toprule
+  Espèce & Comestible & Chapeau & Tige & Couleur \\ \midrule
+  a      & o          & a       & e    & b       \\
+  b      & o          & a       & e    & j       \\
+  c      & o          & a       & e    & b       \\
+  d      & o          & pl      & f    & j       \\
+  e      & o          & pl      & f    & b       \\
+  f      & n          & po      & f    & r       \\
+  g      & n          & po      & f    & j       \\
+  h      & n          & po      & e    & r       \\
+  i      & n          & a       & f    & j       \\
+  j      & n          & pl      & f    & j       \\ \bottomrule
+  \end{tabular}
+  
+  \label{tab:champignons}
+  \end{table}
+
+  On cherche à faire un arbre de discrimination qui permet de predire la comestibilité à partir des autres caractéristique, et qui soit 
+  le plus court possible
+  \\
+  \\
+  Pour ce faire, on calcul les informations mutuelles \underline{totales} entre chaque variable
+
+  \subsection{Calculs}
+
+  \subsubsection{Détails pour le premier calcul}
+  On considere que la variable comestible est noté $X_1$ et la variable chapeau $X_2$.
+  \\
+  On calcul l'information mutuelle avec $I(X_1,X_2) = H(X_1) + H(X_2) - H(X_1,X_2)$.
+  \\
+  \\
+  \begin{table}[H]
+    \centering
+    \caption{Croissement entre comestibilité (X1) et forme du chapeau (X2)}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    X1\textbackslash{}X2 & Po & a & Pl \\ \hline
+    O                    & 0  & 3 & 2  \\ \hline
+    N                    & 3  & 1 & 1  \\ \hline
+    \end{tabular}
+    \end{table}
+
+    $I(X1,X2)=H(X1)+H(X2)-H(X1,X2)=0.277$
+    \\
+    \\
+    En procédant de même pour chaque cas, on a :
+
+    $I(X_1,X_3)=0.086$ ;
+    $I(X_1,X_4)=0.357$ ;
+    $I(X_2,X_3)=0.257$ ;
+    $I(X_2,X_4)=0.370$ ;
+    $I(X_3,X_4)=0.093$ ;
+    \\
+    \\
+
+    \subsection{Informations mutuelles totales}
+    On calcul l'information mutuelles totales pour une variable $X_k$ comme 
+    la somme des informations mutuelles avec les autres variables. C'est à dire :
+    \\
+    \\
+    $\bar{I_1}=I(X_1,X_2) + I(X_1,X_3) + I(X_1,X_4) = 0.720 $ 
+    \\
+    $\bar{I_2}=I(X_1,X_2) + I(X_2,X_3) + I(X_2,X_4) = 0.905 $
+    \\
+    $\bar{I_3}=I(X_1,X_3) + I(X_2,X_3) + I(X_3,X_4) = 0.437$
+    \\
+    $\bar{I_4}=I(X_1,X_4) + I(X_2,X_4) + I(X_3,X_4) = 0.820$
+    \\
+    \\
+    Ainsi, X2 ("forme du chapeau") est la variable qui donne le plus d'information sur les autres.
+    \\
+    \\
+    Nous allons alors analyser les information mutuelles en fonction de leur forme
+
+    \subsection{Information mutuelle par forme}
+
+    \subsubsection{Chapeau de forme pointu}
+      On remarque qu'aucun des champigons pointu est commestible.(cf tableau)
+
+\subsubsection{Chapeau de forme arrondi}
+
+Si on considère que les chapeau de forme arrondi, on obtient les tableaux suivant: 
+
+\begin{table}[H]
+  \centering
+  \caption{X1 et X3 avec chapeau arrondi}
+  \begin{tabular}{|l|l|l|}
+  \hline
+  X1\textbackslash{}X3 & E & F \\ \hline
+  O                    & 3 & 0 \\ \hline
+  N                    & 0 & 1 \\ \hline
+  \end{tabular}
+  \end{table}
+
+  \begin{table}[h]
+    \centering
+    \caption{X1 et X4 avec chapeau arrondi}
+    \begin{tabular}{|l|l|l|l|}
+    \hline
+    X1\textbackslash{}X4 & b & j & r \\ \hline
+    O                    & 2 & 1 & 0 \\ \hline
+    N                    & 0 & 1 & 0 \\ \hline
+    \end{tabular}
+    \end{table}
+
+    \begin{table}[H]
+      \centering
+      \caption{X3 et X4 avec chapeau arrondi}
+      \begin{tabular}{|l|l|l|l|}
+      \hline
+      X3\textbackslash{}X4 & b & j & r \\ \hline
+      E                    & 2 & 1 & 0 \\ \hline
+      F                    & 0 & 1 & 0 \\ \hline
+      \end{tabular}
+      \end{table}
+
+Les information mutuelles sont alors :
+
+$I(X_1,X_3)=0.562$ ;
+$I(X_1,X_4)=0.216$ ;
+$I(X_3,X_4)=0.216$ ;
+\\
+On a alors :
+
+
+    
+
+
+\subsubsection{Chapeau de forme plat}
 
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.16)  19 OCT 2024 11:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.9.16)  20 OCT 2024 16:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -283,22 +283,41 @@ Style option: `fancybox' v1.4 <2010/05/15> (tvz)
 \EndVerbatimTokens=\toks31
 \Verbatim@Outfile=\write3
 \Verbatim@Infile=\read2
+) (C:\Users\damie\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen161
+\lightrulewidth=\dimen162
+\cmidrulewidth=\dimen163
+\belowrulesep=\dimen164
+\belowbottomsep=\dimen165
+\aboverulesep=\dimen166
+\abovetopsep=\dimen167
+\cmidrulesep=\dimen168
+\cmidrulekern=\dimen169
+\defaultaddspace=\dimen170
+\@cmidla=\count294
+\@cmidlb=\count295
+\@aboverulesep=\dimen171
+\@belowrulesep=\dimen172
+\@thisruleclass=\count296
+\@lastruleclass=\count297
+\@thisrulewidth=\dimen173
 ) (C:\Users\damie\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption.sty
 Package: caption 2023/08/05 v3.6o Customizing captions (AR)
  (C:\Users\damie\AppData\Local\Programs\MiKTeX\tex/latex/caption\caption3.sty
 Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen161
-\captionmargin=\dimen162
-\caption@leftmargin=\dimen163
-\caption@rightmargin=\dimen164
-\caption@width=\dimen165
-\caption@indent=\dimen166
-\caption@parindent=\dimen167
-\caption@hangindent=\dimen168
+\caption@tempdima=\dimen174
+\captionmargin=\dimen175
+\caption@leftmargin=\dimen176
+\caption@rightmargin=\dimen177
+\caption@width=\dimen178
+\caption@indent=\dimen179
+\caption@parindent=\dimen180
+\caption@hangindent=\dimen181
 Package caption Info: Standard document class detected.
 )
-\c@caption@flags=\count294
-\c@continuedfloat=\count295
+\c@caption@flags=\count298
+\c@continuedfloat=\count299
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
@@ -310,41 +329,41 @@ File: lstlang2.sty 2023/02/27 1.9 listings language file
 File: lstlang3.sty 2023/02/27 1.9 listings language file
 ) (C:\Users\damie\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count296
+\l__color_backend_stack_int=\count300
 \l__pdf_internal_box=\box59
 ) (DM.aux)
 \openout1 = `DM.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 32.
+LaTeX Font Info:    ... okay on input line 32.
  (C:\Users\damie\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count297
-\scratchdimen=\dimen169
+\scratchcounter=\count301
+\scratchdimen=\dimen182
 \scratchbox=\box60
-\nofMPsegments=\count298
-\nofMParguments=\count299
+\nofMPsegments=\count302
+\nofMParguments=\count303
 \everyMPshowfont=\toks32
-\MPscratchCnt=\count300
-\MPscratchDim=\dimen170
-\MPnumerator=\count301
-\makeMPintoPDFobject=\count302
+\MPscratchCnt=\count304
+\MPscratchDim=\dimen183
+\MPnumerator=\count305
+\makeMPintoPDFobject=\count306
 \everyMPtoPDFconversion=\toks33
 ) (C:\Users\damie\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -352,31 +371,31 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\damie\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-\c@lstlisting=\count303
-Package hyperref Info: Link coloring OFF on input line 31.
+\c@lstlisting=\count307
+Package hyperref Info: Link coloring OFF on input line 32.
  (DM.out) (DM.out)
 \@outlinefile=\write4
 \openout4 = `DM.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 35.
  (C:\Users\damie\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 34.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 35.
  (C:\Users\damie\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<ssd_logo.png, id=39, 301.125pt x 103.38625pt>
+<ssd_logo.png, id=75, 301.125pt x 103.38625pt>
 File: ssd_logo.png Graphic file (type png)
 <use ssd_logo.png>
-Package pdftex.def Info: ssd_logo.png  used on input line 37.
+Package pdftex.def Info: ssd_logo.png  used on input line 38.
 (pdftex.def)             Requested size: 172.5pt x 59.22734pt.
-<logo_um_2022_rouge_RVB.png, id=41, 194.6472pt x 71.0655pt>
+<logo_um_2022_rouge_RVB.png, id=77, 194.6472pt x 71.0655pt>
 File: logo_um_2022_rouge_RVB.png Graphic file (type png)
 <use logo_um_2022_rouge_RVB.png>
-Package pdftex.def Info: logo_um_2022_rouge_RVB.png  used on input line 42.
+Package pdftex.def Info: logo_um_2022_rouge_RVB.png  used on input line 43.
 (pdftex.def)             Requested size: 172.5pt x 62.98132pt.
  [1
 
@@ -385,76 +404,132 @@ Package pdftex.def Info: logo_um_2022_rouge_RVB.png  used on input line 42.
 \openout5 = `DM.toc'.
 
  [2]
-<CE.png, id=70, 793.96625pt x 435.6275pt>
+<CE.png, id=115, 793.96625pt x 435.6275pt>
 File: CE.png Graphic file (type png)
 <use CE.png>
-Package pdftex.def Info: CE.png  used on input line 60.
+Package pdftex.def Info: CE.png  used on input line 61.
 (pdftex.def)             Requested size: 241.49895pt x 132.50392pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--81
+Underfull \hbox (badness 10000) in paragraph at lines 66--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--81
+Underfull \hbox (badness 10000) in paragraph at lines 66--82
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 83--93
+Underfull \hbox (badness 10000) in paragraph at lines 84--94
 
  []
 
 [3 <./CE.png>]
-Overfull \hbox (35.2785pt too wide) in paragraph at lines 97--102
+Overfull \hbox (35.2785pt too wide) in paragraph at lines 98--103
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--120
+Underfull \hbox (badness 10000) in paragraph at lines 110--121
 
  []
 
 
-Overfull \hbox (24.72287pt too wide) in paragraph at lines 140--146
+Overfull \hbox (24.72287pt too wide) in paragraph at lines 141--147
  [][] 
  []
 
 [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 211--214
+Underfull \hbox (badness 10000) in paragraph at lines 212--215
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 226--228
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 289--291
+Underfull \hbox (badness 10000) in paragraph at lines 290--292
 
  []
 
-[7] [8] (DM.aux)
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--307
+
+ []
+
+[7] [8]
+Underfull \hbox (badness 10000) in paragraph at lines 393--398
+
+ []
+
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 412.
+(C:\Users\damie\AppData\Local\Programs\MiKTeX\tex/latex/base\omscmr.fd
+File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 412.
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--416
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 402--416
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--422
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--430
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 423--430
+
+ []
+
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 432--449
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--449
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 432--449
+
+ []
+
+[10] [11] [12] (DM.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-01-04>
  ***********
 Package rerunfilecheck Info: File `DM.out' has not changed.
-(rerunfilecheck)             Checksum: 5D2EF7C1ABB5A5276923BA89EE12BB5A;1435.
+(rerunfilecheck)             Checksum: E254B822F25BB4D3760AB4EE1937EA51;2973.
  ) 
 Here is how much of TeX's memory you used:
- 12696 strings out of 474486
- 201003 string characters out of 5743755
+ 12815 strings out of 474486
+ 202999 string characters out of 5743755
  1944542 words of memory out of 5000000
- 34796 multiletter control sequences out of 15000+600000
+ 34890 multiletter control sequences out of 15000+600000
  567785 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,79p,423b,450s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on DM.pdf (8 pages, 392777 bytes).
+<C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on DM.pdf (12 pages, 425637 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 28 named destinations out of 1000 (max. 500000)
- 88 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 257 PDF objects out of 1000 (max. 8388607)
+ 46 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

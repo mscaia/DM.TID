@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1729330390.64479 "c:/Users/damie/Desktop/MASTER/TID/DM/1DM/TID/DM.tex" "DM.pdf" "DM" 1729330391.84887 0
-  "C:/Users/damie/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1729178113 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
+["pdflatex"] 1729435856.44964 "c:/Users/damie/Desktop/MASTER/TID/DM/1DM/TID/DM.tex" "DM.pdf" "DM" 1729435858.0198 0
+  "C:/Users/damie/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1729428262 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/damie/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1726482269 24225046 12de9b20689ef33bea56a0b54590523c ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1233951848 1004 54797486969f23fa377b128694d548df ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1233951848 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -33,6 +33,7 @@
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx9.pfb" 1247596667 32298 c6d25bb16d1eac01ebdc6d7084126a1e ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1247596667 30251 6afa5cb1d0204815a708a080681d4674 ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1247596667 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
+  "C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi5.pfb" 1247596667 37912 07513ec114ac737ab54cea0152f4424b ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1247596667 36281 c355509802a035cadc5f15869451dcee ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb" 1247596667 36094 798f80770b3b148ceedd006d487db67c ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
@@ -70,7 +71,9 @@
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/base/atbegshi-ltx.sty" 1705273578 3045 273c666a54e60b9f730964f431a56c1b ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/base/atveryend-ltx.sty" 1705273579 2462 6bc53756156dbd71c1ad550d30a3b93f ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/base/inputenc.sty" 1705273578 5048 425739d70251273bf93e3d51f3c40048 ""
+  "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/base/omscmr.fd" 1705273579 2469 74341109f164f230581718c66211c718 ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/base/size10.clo" 1705273578 8448 dbc0dbf4156c0bb9ba01a1c685d3bad0 ""
+  "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/booktabs/booktabs.sty" 1579093635 6253 f1cb470c9199e7110a27851508ed7a5c ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption.sty" 1696169587 56128 c2ccf1a29d78c33bc553880402e4fb9a ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/caption/caption3.sty" 1696169587 72619 ee90b6612147680fd73c3b1406a74245 ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1623003186 13886 d1306dcf79a944f6988e688c1785f9ce ""
@@ -106,11 +109,11 @@
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/damie/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "CE.png" 1729182526 233269 74652f3762b973d78c80512d17044e80 ""
-  "DM.aux" 1729330391 2536 61de2e415401cb7925055ffdd52ddab1 "pdflatex"
-  "DM.out" 1729330391 1435 5d2ef7c1abb5a5276923ba89ee12bb5a "pdflatex"
-  "DM.tex" 1729330390 8670 90d676f290c5c05e4854c23e00f1148b ""
-  "DM.toc" 1729330391 761 7f7eb703d368202a9875a8bd591f4891 "pdflatex"
-  "c:/Users/damie/Desktop/MASTER/TID/DM/1DM/TID/DM.tex" 1729330390 8670 90d676f290c5c05e4854c23e00f1148b ""
+  "DM.aux" 1729435857 4679 7902e69cfb43724c43e6e35b89638b42 "pdflatex"
+  "DM.out" 1729435857 2973 e254b822f25bb4d3760ab4ee1937ea51 "pdflatex"
+  "DM.tex" 1729435855 14310 31462342f33639a427ac8b4a2a4e61f4 ""
+  "DM.toc" 1729435857 1578 95606bfa4d2895fe5b36e84a3e895a6d "pdflatex"
+  "c:/Users/damie/Desktop/MASTER/TID/DM/1DM/TID/DM.tex" 1729435855 14310 31462342f33639a427ac8b4a2a4e61f4 ""
   "logo_um_2022_rouge_RVB.png" 1729182526 57225 49489d4fdb42d214e1a26327ea8c3f69 ""
   "ssd_logo.png" 1729182526 11882 f77cab45982b1ebe15249c69858004c5 ""
   (generated)
