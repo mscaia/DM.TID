@@ -1,6 +1,6 @@
-PWD c:\Users\damie\Desktop\MASTER\TID\DM\1DM\TID
+PWD c:\Users\damie\Documents\MASTER\TID\DM\1DM\TID
 INPUT C:\Users\damie\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\damie\Desktop\MASTER\TID\DM\1DM\TID\DM.tex
+INPUT c:\Users\damie\Documents\MASTER\TID\DM\1DM\TID\DM.tex
 OUTPUT DM.log
 INPUT C:\Users\damie\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\damie\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls

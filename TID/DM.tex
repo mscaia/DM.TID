@@ -516,8 +516,8 @@ Si on considère que les chapeaux de formes plat, on obtient les tableaux suivan
   \begin{tabular}{|l|l|l|l|}
   \hline
   X3\textbackslash{}X4 & b & j & r \\ \hline
-  E                    & 0 & 1 & 0 \\ \hline
-  F                    & 1 & 1 & 0 \\ \hline
+  E                    & 0 & 0 & 0 \\ \hline
+  F                    & 1 & 2 & 0 \\ \hline
   \end{tabular}
 \end{table}
 
@@ -529,7 +529,7 @@ I(X_1,X_3)= 0;
 I(X_1,X_4)= 0.174 ;
 \]
 \[
-I(X_3,X_4)= 0.174 ;
+I(X_3,X_4)= 0 ;
 \]
 
 Donc on obtient :
@@ -538,10 +538,10 @@ Donc on obtient :
 \bar{I_1}= 0.174
 \]
 \[
-\bar{I_3}= 0.174
+\bar{I_3}= 0
 \]
 \[
-\bar{I_4}= 0,348
+\bar{I_4}= 0.174
 \]
 
 
@@ -554,38 +554,37 @@ Avec toutes les informations mutuelles calculé, on obtient alors l'arbre suivan
   \caption{Arbre de discrimination pour la comestibilité d'un champignon}
   \resizebox{\textwidth}{!}{
   \begin{tikzpicture}[
-    every node/.style={draw, rectangle, rounded corners, align=center, minimum size=6mm, font=\scriptsize},
+    every node/.style={draw, rectangle, rounded corners, align=center, minimum size=10mm, font=\scriptsize},
     level 1/.style={sibling distance=100mm},
     level 2/.style={sibling distance=100mm},
     level 3/.style={sibling distance=50mm},
     level 4/.style={sibling distance=25mm},
-    edge from parent/.style={draw, -{Latex[length=2mm]}, thick},
+    edge from parent/.style={draw, -{Latex[length=5mm]}, thick},
     level distance=35mm
   ]
   
   \node {Chapeau}
     child {node {Pointu}
-        child {node {Non comestible}}
+        child {node {f,g,h}edge from parent node[right] {Non comestible}}
     }
     child {node {Arrondi}
-        child {node {Couleur}
-          child {node {Brun}
-              child {node {Comestible}}
+        child {node {Tige}
+          child {node {Epais}
+              child {node {a,b,c}edge from parent node[right] {Comestible}}
           }
-          child {node {Jaune}
-              child {node {Comestible} edge from parent node[left] {épais}}
-              child {node {Non comestible} edge from parent node[right] {fin}}
+          child {node {fin}
+              child {node {i} edge from parent node[right] {Non comestible}}
           }
         }
     }
     child {node {Plat}
         child {node {Couleur}
           child {node {Brun}
-              child {node {Comestible}}
+              child {node {e}edge from parent node[right] {Comestible}}
           }
           child {node {Jaune}
-              child {node {Comestible} edge from parent node[left] {Champignon d}}
-              child {node {Non comestible} edge from parent node[right] {Champignon j}}
+              child {node {d} edge from parent node[left] {Comestible}}
+              child {node {j} edge from parent node[right] {Non comestible}}
           }
         }
     };
