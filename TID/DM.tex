@@ -214,44 +214,38 @@ Nous avons donc $\bar{I_C}$ qui est le plus élevé. Ainsi, l'arbre de segmentat
 
 En agrégeant seulement les classes contigues, nous avons 4 possibilités de regroupement binaire de 
 X.
-\\
+
 
 \[
 Z1 =\{ \{0 \% \} , \{0 - 0.5 \% ,0.5-1 \% ,1-3 \% ,>3 \% \} \}  
 \]
 \[
-Z1 =\{ \{0 \% , 0 - 0.5 \%  \} , \{0.5-1 \% ,1-3 \% ,>3 \% \} \}
+Z2 =\{ \{0 \% , 0 - 0.5 \%  \} , \{0.5-1 \% ,1-3 \% ,>3 \% \} \}
 \]
 \[
-Z1 =\{ \{0 \%, 0 - 0.5 \% ,0.5-1 \%  \} , \{1-3 \% ,>3 \% \} \}
+Z3 =\{ \{0 \%, 0 - 0.5 \% ,0.5-1 \%  \} , \{1-3 \% ,>3 \% \} \}
 \]
 \[
-Z1 =\{ \{0 \% , 0 - 0.5 \% ,0.5-1 \% ,1-3 \% \} , \{>3 \% \} \}
+Z4 =\{ \{0 \% , 0 - 0.5 \% ,0.5-1 \% ,1-3 \% \} , \{>3 \% \} \}
 \]
-\\
+
 
 L'entropie de chacun de ses recodages se calcule numeriquement et donne :
 
 \[
-H(Z1) = -(29/72*log2(29/72)+43/72*log2(43/72)) = 0.973
+H(Z1) = -\left(\frac{29}{72}log_2(\frac{29}{72})+\frac{43}{72}log_2(\frac{43}{72})\right) = 0.973
 \]
+De la même manière, nous trouvons.
 \[
-H(Z2) = -(29/72*log2(29/72)+43/72*log2(43/72)) = 0.954
+H(Z2) = 0.954 \hspace{1cm} H(Z3) = 0.617 \hspace{1cm} H(Z4) = 0.106
 \]
-\[
-H(Z3) = -(29/72*log2(29/72)+43/72*log2(43/72)) = 0.617
-\]
-\[
-H(Z4) = -(29/72*log2(29/72)+43/72*log2(43/72)) = 0.106
-\]
-\\
 Le meilleur recodage est donc le premiers c'est à dire :
 $Z1 =\{ \{0 \% \} , \{0 - 0.5 \% ,0.5-1 \% ,1-3 \% ,>3 \% \} \}$
 
 
 \subsubsection{Recodage en 3 variables}
 
-En procédant de la meme facon, on considere alors 6 cas :
+En procédant de la meme facon, on considère alors 6 cas :
 
 \[
 Z1 =\{ \{0 \% \} , \{0 - 0.5 \%\} ,\{0.5-1 \% ,1-3 \% ,>3 \% \} \}  
@@ -266,7 +260,7 @@ Z1 =\{ \{0 \% \} , \{0 - 0.5 \%\} ,\{0.5-1 \% ,1-3 \% ,>3 \% \} \}
   Z4 =\{ \{0 \%, 0 - 0.5\%\} , \{ 0.5-1 \% ,1-3 \%  \} ,\{>3 \% \} \}
 \]
 \[
-  Z5 =\{ \{0 \%, 0 - 0.5\%\} , \{,  0.5-1 \% \} ,\{1-3 \% , >3 \% \} \}
+  Z5 =\{ \{0 \%, 0 - 0.5\%\} , \{ 0.5-1 \% \} ,\{1-3 \% , >3 \% \} \}
 \]
 \[
   Z6 =\{ \{0 \%, 0 - 0.5\%,  0.5-1 \% \} , \{1-3 \%  \} ,\{>3 \% \} \}
@@ -274,26 +268,9 @@ Z1 =\{ \{0 \% \} , \{0 - 0.5 \%\} ,\{0.5-1 \% ,1-3 \% ,>3 \% \} \}
 \\
 L'entropie est calculé numériquement :
 \[
-H(Z1) = 1.541
+H(Z1) = 1.541 \hspace{0.5cm} H(Z2) = 1.462 \hspace{0.5cm} H(Z3) = 1.068 \hspace{0.5cm} H(Z4) = 1.040 \hspace{0,5cm} H(Z5) = 1.320 \hspace{0,5 cm} H(Z6) = 0.684
 \]
-\[
-H(Z2) = 1.462
-\]
-\[
-H(Z3) = 1.068
-\]
-\[
-H(Z4) = 1.040
-\]
-\[
-H(Z5) = 1.320
-\]
-\[
-H(Z6) = 0.684
-\]
-\\
-
-Et nous remarquons que le meilleure recodage en 3 variables est Z1.
+Nous remarquons que le meilleure recodage en 3 variables est $Z1$.
 
 \subsection{Le meilleur recodage de X pour prédire Y }
 
@@ -301,21 +278,30 @@ Il sagit ici de recoder X en réduisant l'incertitude sur Y.
 Nous devons donc trouver le $Z_k$ qui maximise l'information mutuelle entre $Z_k$ et Y.
 \\
 C'est à dire, trouvons le recodage $Z_k$ qui maximise :
-\[
-I(Z_k; Y) = \sum_{z\in Z_k} \sum_{y \in Y} p(z, y) \log \left( \frac{p(z, y)}{p(z)p(y)} \right)
-\]
-\\
-\\
+\begin{equation}
+  I(Z_k; Y) = \sum_{z\in Z_k} \sum_{y \in Y} p(z, y) \log \left( \frac{p(z, y)}{p(z)p(y)} \right)
+  \label{eq:infomutu}
+\end{equation}
+
 \underline{Détaillons le calcul pour le premier recodage :}
 
-
+\begin{table}[H]
+  \centering
+  \begin{tabular}{|l|l|l|}
+  \hline
+      & 0\%   & $\neq$ 0\% \\ \hline
+  OUI & 2/72  & 20/72 \\ \hline
+  NON & 27/72 & 23/72 \\ \hline
+  \end{tabular}
+  \end{table}
+Ainsi
 \[
 p(Z1 = 0\%) = \frac{29}{72}, \quad p(Z1 \neq 0\%) = \frac{43}{72}
 \]
 \[
-p(Y = \text{Oui}) = \frac{29}{72}, \quad p(Y = \text{Non}) = \frac{43}{72}
+p(Y = \text{Oui}) = \frac{22}{72}, \quad p(Y = \text{Non}) = \frac{50}{72}
 \]
-
+De plus
 
 \[
 p(Z1 = 0\%, Y = \text{Oui}) = \frac{2}{72}, \quad p(Z1 = 0\%, Y = \text{Non}) = \frac{27}{72}
@@ -323,7 +309,7 @@ p(Z1 = 0\%, Y = \text{Oui}) = \frac{2}{72}, \quad p(Z1 = 0\%, Y = \text{Non}) = 
 \[
 p(Z1 \neq 0\%, Y = \text{Oui}) = \frac{20}{72}, \quad p(Z1 \neq 0\%, Y = \text{Non}) = \frac{23}{72}
 \]
-
+Nous pouvons calculer l'information mutuelle $I(Z1,Y)$, en utilisant la formule \ref{eq:infomutu}.
 \[
 I(Z1; Y) = p(Z1 = 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z1 = 0\%, Y = \text{Oui})}{p(Z1 = 0\%) p(Y = \text{Oui})}\right) + \ldots
 \]
@@ -336,15 +322,11 @@ I(Z1; Y) = p(Z1 = 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z1 = 0\%, Y = \text{
 \[
 + p(Z1 \neq 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z1 \neq 0\%, Y = \text{Non})}{p(Z1 \neq 0\%) p(Y = \text{Non})}\right)
 \]
-
+Nous trouvons alors.
 \[
-= 0.176
+  I(Z1; Y)= 0.176
 \]
-
-
-
-
-En faisant de meme pour chaque information mutuelle, on trouve : 
+En faisant de même pour chaque information mutuelle, on trouve : 
 
 \[
 I(Z1,Y) = 0.178
@@ -363,14 +345,14 @@ I(Z4,Y) = 0.024
 \]
 
 L'information mutuelle la plus grande est le recodage Z1.
-Cela signifie que Z1 est le meilleur recodage qui permet de prédir Y.
+Cela signifie que Z1 est le meilleur recodage qui permet de prédire Y.
 
 
 \newpage
 \section{Exercice 3}
 \subsection{Description}
 
-On considere le tableau recensent des especes de champignons suivant 4 variables qualitatifs. 
+On considère le tableau recensant des espèces de champignons suivant 4 variables qualitatifs. 
 
 \begin{table}[h]
   \centering
@@ -393,22 +375,29 @@ On considere le tableau recensent des especes de champignons suivant 4 variables
   \label{tab:champignons}
   \end{table}
 
-  On cherche à faire un arbre de discrimination qui permet de predire la comestibilité à partir des autres caractéristique, et qui soit 
-  le plus court possible
+  On cherche à faire un arbre de discrimination qui permet de prédire la comestibilité à partir des autres caractéristiques, tout en étant le plus court possible.
   \\
   \\
-  Pour ce faire, on calcul les informations mutuelles \underline{totales} entre chaque variable
+  Pour ce faire, on calcul les informations mutuelles \underline{totales} entre chaque variable.
+  En effet en pratique, nous allons chercher la variables qui informe le plus sur les autres. Cela revient a calculer.
+  \begin{equation}
+    \bar{I}_k = \sum_{n \neq k = 1}^{4} I(X_n,X_k)
+    \label{eq : I bar}
+  \end{equation}
+  et choisir la variable tel que $\bar{I}_k$ est maximale.
 
-  \subsection{Calculs}
+où 
+\[
+X_1 = \{Comestible\} \hspace{1cm} X_2 = \{Chapeau\} \hspace{1cm} X_3 = \{Tige\} \hspace{1cm} X_4 = \{Couleur\}
+\]
 
-  \subsubsection{Détails pour le premier calcul}
-  On considere que la variable comestible est noté $X_1$ et la variable chapeau $X_2$.
-  \\
-  On calcul l'information mutuelle avec $I(X_1,X_2) = H(X_1) + H(X_2) - H(X_1,X_2)$.
-  \\
-  \\
-  \begin{table}[H]
-    \centering
+\subsection{Calculs}
+
+\subsubsection{Détails pour le premier calcul}
+On calcul l'information mutuelle avec $I(X_1,X_2) = H(X_1) + H(X_2) - H(X_1,X_2)$.
+
+\begin{table}[H]
+  \centering
     \caption{Croissement entre comestibilité (X1) et forme du chapeau (X2)}
     \begin{tabular}{|l|l|l|l|}
     \hline
@@ -416,36 +405,20 @@ On considere le tableau recensent des especes de champignons suivant 4 variables
     O                    & 0  & 3 & 2  \\ \hline
     N                    & 3  & 1 & 1  \\ \hline
     \end{tabular}
-    \end{table}
-
-    $I(X1,X2)=H(X1)+H(X2)-H(X1,X2)=0.277$
-    \\
-    \\
-    En procédant de même pour chaque cas, on a :
-
-    $I(X_1,X_3)=0.086$ ;
-    $I(X_1,X_4)=0.357$ ;
-    $I(X_2,X_3)=0.257$ ;
-    $I(X_2,X_4)=0.370$ ;
-    $I(X_3,X_4)=0.093$ ;
-    \\
-    \\
-
-    \subsection{Informations mutuelles totales}
-    On calcul l'information mutuelles totales pour une variable $X_k$ comme 
-    la somme des informations mutuelles avec les autres variables. C'est à dire :
-    \\
-    \\
-    $\bar{I_1}=I(X_1,X_2) + I(X_1,X_3) + I(X_1,X_4) = 0.720 $ 
-    \\
-    $\bar{I_2}=I(X_1,X_2) + I(X_2,X_3) + I(X_2,X_4) = 0.905 $
-    \\
-    $\bar{I_3}=I(X_1,X_3) + I(X_2,X_3) + I(X_3,X_4) = 0.437$
-    \\
-    $\bar{I_4}=I(X_1,X_4) + I(X_2,X_4) + I(X_3,X_4) = 0.820$
-    \\
-    \\
-    Ainsi, X2 ("forme du chapeau") est la variable qui donne le plus d'information sur les autres.
+\end{table}
+Nous trouvons que $I(X1,X2)=H(X1)+H(X2)-H(X1,X2)=0.277$
+\\\\
+En procédant de la même manière pour les cas restant, nous trouvons :
+\[
+  I(X_1,X_3)=0.086 \hspace{1cm} I(X_1,X_4)=0.357 \hspace{1cm} I(X_2,X_3)=0.257 \hspace{1cm} I(X_2,X_4)=0.370 \hspace{1cm} I(X_3,X_4)=0.093
+\]
+    
+\subsection{Informations mutuelles totales}
+ On calcul l'information mutuelle, avec la formule \ref{eq : I bar}.
+\[
+  \bar{I_1}=0.720 \hspace{1cm} \bar{I_2}=0.905 \hspace{1cm} \bar{I_3}= 0.437 \hspace{1cm} \bar{I_4}= 0.820
+\]
+Ainsi, $X_2$ ("forme du chapeau") est la variable qui donne le plus d'information sur les autres.
     \\
     \\
     Nous allons alors analyser les information mutuelles en fonction de leur forme
@@ -453,7 +426,7 @@ On considere le tableau recensent des especes de champignons suivant 4 variables
     \subsection{Information mutuelle par forme}
 
     \subsubsection{Chapeau de forme pointu}
-      On remarque qu'aucun des champigons pointu est commestible.(cf tableau)
+      On remarque qu'aucun des champigons pointu est commestible. (cf tableau \ref{tab:champignons})
 
 \subsubsection{Chapeau de forme arrondi}
 
@@ -493,23 +466,22 @@ Si on considère que les chapeau de forme arrondi, on obtient les tableaux suiva
       \end{table}
 
 Les information mutuelles sont alors :
+\[
+  I(X_1,X_3)=0.562 \hspace{1cm} I(X_1,X_4)=0.216 \hspace{1cm} I(X_3,X_4)=0.216 \hspace{1cm}
+\]
 
-$I(X_1,X_3)=0.562$ ;
-$I(X_1,X_4)=0.216$ ;
-$I(X_3,X_4)=0.216$ ;
-\\
 On a alors :
 \[
-\bar{I_1}=I(X_1,X_3) + I(X_1,X_4)= 0.685 
+\bar{I_1}=I(X_1,X_3) + I(X_1,X_4)= 0.778 
 \]
 \[
-\bar{I_3}=I(X_1,X_3) + I(X_3,X_4)= 0.432 
+\bar{I_3}=I(X_1,X_3) + I(X_3,X_4)= 0.778
 \]
 \[
 \bar{I_4}=I(X_1,X_4) + I(X_3,X_4)= 0.432
 \]
 
-On choisit alors pour les chapeaux arrondi 
+On choisit pour les chapeaux arrondi la variable $X_3$.
     
 
 
