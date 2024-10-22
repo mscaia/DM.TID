@@ -311,37 +311,33 @@ p(Z1 \neq 0\%, Y = \text{Oui}) = \frac{20}{72}, \quad p(Z1 \neq 0\%, Y = \text{N
 \]
 Nous pouvons calculer l'information mutuelle $I(Z1,Y)$, en utilisant la formule \ref{eq:infomutu}.
 \[
-I(Z1; Y) = p(Z1 = 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z1 = 0\%, Y = \text{Oui})}{p(Z1 = 0\%) p(Y = \text{Oui})}\right) + \ldots
+I(Z1; Y) = p(Z1 = 0\%, Y = \text{Oui}) \log \left(\frac{p(Z1 = 0\%, Y = \text{Oui})}{p(Z1 = 0\%) p(Y = \text{Oui})}\right) + \ldots
 \]
 \[
-+ p(Z1 = 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z1 = 0\%, Y = \text{Non})}{p(Z1 = 0\%) p(Y = \text{Non})}\right) + \ldots
++ p(Z1 = 0\%, Y = \text{Non}) \log \left(\frac{p(Z1 = 0\%, Y = \text{Non})}{p(Z1 = 0\%) p(Y = \text{Non})}\right) + \ldots
 \]
 \[
-+ p(Z1 \neq 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z1 \neq 0\%, Y = \text{Oui})}{p(Z1 \neq 0\%) p(Y = \text{Oui})}\right) + \ldots
++ p(Z1 \neq 0\%, Y = \text{Oui}) \log \left(\frac{p(Z1 \neq 0\%, Y = \text{Oui})}{p(Z1 \neq 0\%) p(Y = \text{Oui})}\right) + \ldots
 \]
 \[
-+ p(Z1 \neq 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z1 \neq 0\%, Y = \text{Non})}{p(Z1 \neq 0\%) p(Y = \text{Non})}\right)
++ p(Z1 \neq 0\%, Y = \text{Non}) \log \left(\frac{p(Z1 \neq 0\%, Y = \text{Non})}{p(Z1 \neq 0\%) p(Y = \text{Non})}\right)
 \]
-Nous trouvons alors.
+Nous trouvons alors:
 \[
-  I(Z1; Y)= 0.176
+  I(Z1; Y)= 0.28
 \]
 En faisant de même pour chaque information mutuelle, on trouve : 
 
 \[
-I(Z1,Y) = 0.176
+I(Z2,Y) = 0.24
 \]
 
 \[
-I(Z2,Y) = 0.091
+I(Z3,Y) = 0.16
 \]
 
 \[
-I(Z3,Y) = 0.033
-\]
-
-\[
-I(Z4,Y) = 0.024
+I(Z4,Y) = 0.11
 \]
 
 L'information mutuelle la plus grande est le recodage Z1.
