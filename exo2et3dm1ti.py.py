@@ -7,22 +7,22 @@ import numpy as np
 
 # Pour un recodage en 2
 
-print(29/72*np.log2(29/72)+43/72*np.log2(43/72))
-print(45/72*np.log2(45/72)+27/72*np.log2(27/72))
-print(61/72*np.log2(61/72)+11/72*np.log2(11/72))
-print(71/72*np.log2(71/72)+1/72*np.log2(1/72))
+print(29/72*np.log(29/72)+43/72*np.log(43/72))
+print(45/72*np.log(45/72)+27/72*np.log(27/72))
+print(61/72*np.log(61/72)+11/72*np.log(11/72))
+print(71/72*np.log(71/72)+1/72*np.log(1/72))
 
 # On prend Z1
 
 
 # Pour un recodage en 3
 
-print(29/72*np.log2(29/72)+16/72*np.log2(16/72)+27/72*np.log2(27/72))
-print(29/72*np.log2(29/72)+32/72*np.log2(32/72)+11/72*np.log2(11/72))
-print(29/72*np.log2(29/72)+42/72*np.log2(42/72)+1/72*np.log2(1/72))
-print(45/72*np.log2(45/72)+26/72*np.log2(26/72)+1/72*np.log2(1/72))
-print(45/72*np.log2(45/72)+16/72*np.log2(16/72)+11/72*np.log2(11/72))
-print(61/72*np.log2(61/72)+10/72*np.log2(10/72)+1/72*np.log2(1/72))
+print(29/72*np.log(29/72)+16/72*np.log(16/72)+27/72*np.log(27/72))
+print(29/72*np.log(29/72)+32/72*np.log(32/72)+11/72*np.log(11/72))
+print(29/72*np.log(29/72)+42/72*np.log(42/72)+1/72*np.log(1/72))
+print(45/72*np.log(45/72)+26/72*np.log(26/72)+1/72*np.log(1/72))
+print(45/72*np.log(45/72)+16/72*np.log(16/72)+11/72*np.log(11/72))
+print(61/72*np.log(61/72)+10/72*np.log(10/72)+1/72*np.log(1/72))
 
 # On prend Z1  ([0].[0;0.5],[0.5,>3])
 
