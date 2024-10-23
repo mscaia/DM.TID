@@ -9,11 +9,6 @@
 \contentsline {section}{\numberline {3}Exercice 3}{8}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Description}{8}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Calculs}{8}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Détails pour le premier calcul}{8}{subsubsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.3}Informations mutuelles totales}{8}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}Information mutuelle par forme}{9}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}Chapeau de forme pointu}{9}{subsubsection.3.4.1}%
-\contentsline {subsubsection}{\numberline {3.4.2}Chapeau de forme arrondi}{9}{subsubsection.3.4.2}%
-\contentsline {subsubsection}{\numberline {3.4.3}Chapeau de forme plat}{9}{subsubsection.3.4.3}%
-\contentsline {subsection}{\numberline {3.5}Arbre de discrimination}{10}{subsection.3.5}%
-\contentsline {section}{\numberline {4}ANNEXE}{11}{section.4}%
+\contentsline {subsubsection}{\numberline {3.2.1}Premiere étape}{8}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Deuxieme étape : champignons jaune}{8}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Arbre de discrimination}{10}{subsection.3.3}%

@@ -30,92 +30,35 @@ print(61/72*np.log(61/72)+10/72*np.log(10/72)+1/72*np.log(1/72))
 ################################# EXERCICE 3 ##########################
 import numpy as np
 
-I12= 0.3*np.log(0.3/0.2)+0.2*np.log(0.2/0.15)+0.1*np.log(0.1/0.2)+0.1*np.log(0.1/0.15)+0.3*np.log(0.3/0.15)
-I13= 0.3*np.log(0.3/0.2)+0.1*np.log(0.1/0.2)+0.2*np.log(0.2/0.3)+0.4*np.log(0.4/0.3)
-I14= 0.3*np.log(0.3/(3/20))+0.2*np.log(0.2/(5/20))+0.3*np.log(0.3/(5/20))+0.2*np.log(0.2/0.1)
-I23= 0.1*np.log(0.1/(12/100))+0.3*np.log(0.3/(16/100))+0.2*np.log(0.2/(18/100))+0.1*np.log(0.1/(24/100))+0.3*np.log(0.3/(18/100))
-I24= 0.1*np.log(0.1/(15/100))+0.2*np.log(0.2/(6/100))+0.2*np.log(0.2/(12/100))+0.2*np.log(0.2/(20/100))+0.1*np.log(0.1/(9/100))+0.2*np.log(0.2/(15/100))
-I34= 0.2*np.log(0.2/(12/100))+0.1*np.log(0.1/(20/100))+0.1*np.log(0.1/(8/100))+0.1*np.log(0.1/(18/100))+0.4*np.log(0.4/(30/100))+0.1*np.log(0.1/(12/100))
-
-a= I12 + I13 + I14
-b= I12 + I23 + I24
-c= I13 + I23 + I34
-d= I14 + I24 + I34
-
-print(I12)
-print(I13)
-print(I14)
-print(I23)
-print(I24)
-print(I34)
-
-print(a,b,c,d)
-
-# X2 est le plus grand donc on le garde
+HX1=-(1/2*np.log(1/2)+1/2*np.log(1/2))
+HX2=-(4/10*np.log(4/10)+3/10*np.log(3/10)+3/10*np.log(3/10))
+HX3=-(4/10*np.log(4/10)+6/10*np.log(6/10))
+HX4=-(3/10*np.log(3/10)+5/10*np.log(5/10)+2/10*np.log(2/10))
 
 
+HX1X2=-(3/10*np.log(3/10)+1/10*np.log(1/10)+2/10*np.log(2/10)+1/10*np.log(1/10)+3/10*np.log(3/10))
+HX1X3=-(3/10*np.log(3/10)+1/10*np.log(1/10)+2/10*np.log(2/10)+4/10*np.log(4/10))
+HX1X4=-(3/10*np.log(3/10)+2/10*np.log(2/10)+3/10*np.log(3/10)+2/10*np.log(2/10))
 
-
-# %%
-############### EXERCICE 3 via autre formule
-
-X1=-(1/2*np.log(1/2)+1/2*np.log(1/2))
-X2=-(0.3*np.log(0.3)+0.4*np.log(0.4)+0.3*np.log(0.3))
-X3=-(4/10*np.log(4/10)+6/10*np.log(6/10))
-
-X1X2 = -(0.3*np.log(0.3)+0.3*np.log(0.3)+0.1*np.log(0.1)+0.2*np.log(0.2)+0.1*np.log(0.1))
-X1X3=-(3/10*np.log(3/10)+2/10*np.log(2/10)+0.1*np.log(0.1)+0.4*np.log(0.4))
-
-IX1X2= X1 + X2 - X1X2
-IX1X3= X1 + X3 -X1X3
-
-print(IX1X2)
-print(IX1X3)
+print(HX1+HX2-HX1X2)
+print(HX1+HX3-HX1X3)
+print(HX1+HX4-HX1X3)
 # %%
 
-######################## Exercice 3 avec chapeau pointu turlututu
-import numpy as np
+HX1=-(2/5*np.log(2/5)+3/5*np.log(3/5))
+HX3=-(1/5*np.log(1/5)+4/5*np.log(4/5))
+HX2=-(2/5*np.log(2/5)+2/5*np.log(2/5)+1/5*np.log(1/5))
 
-X1=-(1*np.log(1))
-X3=-(1/3*np.log(1/3)+2/3*np.log(2/3))
-X4=-(5)
+HX1X3=-(1/5*np.log(1/5)+1/5*np.log(1/5)+3/5*np.log(3/5))
+HX1X2=-(1/5*np.log(1/5)+1/5*np.log(1/5)+1/5*np.log(1/5)+1/5*np.log(1/5)+1/5*np.log(1/5))
 
-X1X3=-(1/3*np.log(1/3)+2/3*np.log(2/3))
 
-IX1X3=X1+X3-X1X3
+print(HX1)
+print(HX3)
+print(HX1X3)
 
-print(IX1X3)
+print("X1 ET X3",HX1+HX3-HX1X3)
+print("X1 ET X2",HX1+HX2-HX1X2)
 
-####### Pour chapo arondi
 
-Y1=-(3/4*np.log(3/4)+1/4*np.log(1/4))
-Y2=-(3/4*np.log(3/4)+1/4*np.log(1/4))
-Y3=-(1/2*np.log(1/2)+1/2*np.log(1/2))
-
-Y1Y2=-(3/4*np.log(3/4)+1/4*np.log(1/4))
-Y1Y3=-(1/2*np.log(1/2)+1/4*np.log(1/4)+1/4*np.log(1/4))
-
-IY1Y2=Y1+Y2-Y1Y2
-IY1Y3=Y1 + Y3 - Y1Y3
-
-print(IY1Y2)
-print(IY1Y3)
-
-#%%
-import numpy as np
-####### Pour chapo raplapla
-
-Z1= -(2/3*np.log(2/3)+1/3*np.log(1/3))
-Z3 = -(1/3*np.log(1/3)+2/3*np.log(2/3))
-Z4 =-(1/3*np.log(1/3)+2/3*np.log(2/3))
-
-#Z1Z3= 
-Z1Z4= -(1/3*np.log(1/3)+1/3*np.log(1/3)+1/3*np.log(1/3))
-Z3Z4= -(1/3*np.log(1/3)+1/3*np.log(1/3)+1/3*np.log(1/3))
-
-IZ1Z4= Z1 + Z4 - Z1Z4
-IZ3Z4= Z3 + Z4 - Z3Z4
-
-print(IZ1Z4)
-print(IZ3Z4)
 # %%
