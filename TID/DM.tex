@@ -51,8 +51,21 @@
 \tableofcontents
 
 \newpage
+\section{Préambule}
+Pour les calculs, nous avons choisit de faire l'exercice 1 (\ref{Exercice1}) en utilisant le logarithme en base 2, et les exercices 2 et 3 (\ref{exercice2} et \ref{exercice3}) en logarithme népérien.\\
+Cependant, calculer avec le logarithme népérien ou avec le logarithme en base 2 revient au même. En effet, les deux logarithmes peuvent être reliés par une relation.
+ Cela signifie que toute expression impliquant \( \log_2 \) peut être transformée en \( \ln \), et cela ne change pas l'interprétation des résulats. Ils ont seulement un facteur multiplicatif constant les différenciant.
+
+Ces deux logarithmes sont reliés par la formule suivante :
+
+\[
+\log_2(x) = \frac{\ln(x)}{\ln(2)}
+\]
+
 
 \section{Exercice 1}
+\label{Exercice1}
+
 On considère le tableau ci-dessous, répartissant la population active occupée selon l'âge ($A$), le sexe ($S$) et la
 catégorie socioprofessionnelle ($C$) (source: INSEE, enquête emploi 2016).
 \begin{figure}[ht]
@@ -177,7 +190,7 @@ R_2 = \frac{I(A,(SC)))}{H(S,C)}=0,0092
 \[
 R_3 = \frac{I(S,(CA)))}{H(A,C)}=0,0066
 \]
-Le rapport $R_1$ est le plus élevé. Donc c'est la variable $C$ modélisé par les deux autres ($A$ et $S$) qui nous donne le plus d'information.
+Le rapport $R_1$ est le plus élevé. Donc la variable $C$ modélisé par les deux autres ($A$ et $S$) nous donne le plus d'information.
 \subsection{Arbre de segmentation binaire}
 Grâce à la partie \ref{1.1}, nous pouvons calculer les informations mutuelles suivantes.
 \[
@@ -208,6 +221,7 @@ Nous avons donc $\bar{I_C}$ qui est le plus élevé. Ainsi, l'arbre de segmentat
 
 \newpage
 \section{Exercice 2}
+\label{exercice2}
 \subsection{Recodages}
 
 \subsubsection{Recodage en 2 variables}
@@ -276,7 +290,7 @@ Nous remarquons que le meilleure recodage en 3 variables est $Z1$.
 
 \subsection{Le meilleur recodage de X pour prédire Y }
 
-Il sagit ici de recoder X en réduisant l'incertitude sur Y.
+Il sagit ici de recoder $X$ en réduisant l'incertitude sur $Y$.
 Nous devons donc trouver le $Z_k$ qui maximise l'information mutuelle entre $Z_k$ et Y.
 \\
 C'est à dire, trouvons le recodage $Z_k$ qui maximise :
@@ -328,8 +342,7 @@ Nous trouvons alors:
 \[
   I(Z_1; Y)= 0.176
 \]
-En faisant de même pour chaque information mutuelle, on trouve : 
-
+Faisons le même cheminement mais avec les autres variables. Nous obtenons alors les informations mutuelles suivante.
 \[
 I(Z_1,Y) = 0.176
 \]
@@ -345,13 +358,12 @@ I(Z_3,Y) = 0.033
 \[
 I(Z_4,Y) = 0.024
 \]
-
-L'information mutuelle la plus grande est le recodage Z1.
-Cela signifie que Z1 est le meilleur recodage qui permet de prédire Y.
+On observe que l'information mutuelle la plus élevé est $I(Z_1,Y)$. Donc le recodage avec la variable $Z_1$ est le meilleur permettant de prédire $Y$.
 
 
 \newpage
 \section{Exercice 3}
+\label{exercice3}
 \subsection{Description}
 
 On considère le tableau recensant des espèces de champignons suivant 4 variables qualitatifs. 
@@ -381,7 +393,7 @@ On considère le tableau recensant des espèces de champignons suivant 4 variabl
   \\
   \\
   Pour ce faire, on calcul les informations mutuelles de $X_1$ avec chaque autre variable.
-  En effet, nous allons chercher la variables qui informe le plus sur la commestibilité. Nous effecturons nos calculs avec le log népérien.
+  En effet, nous allons chercher la variables qui informe le plus sur la commestibilité. Nous effecturons nos calculs avec le logarithme népérien.
 
 Nous posons pour la suite
 \[
@@ -391,11 +403,11 @@ X_1 = \{Comestible\} \hspace{1cm} X_2 = \{Chapeau\} \hspace{1cm} X_3 = \{Tige\} 
 \subsection{Calculs}
 
 \subsubsection{Premiere étape}
-On calcul l'information mutuelle avec $I(X_1,X_2) = H(X_1) + H(X_2) - H(X_1,X_2)$.
+On calcul l'information mutuelle avec la formule suivante, $I(X_1,X_2) = H(X_1) + H(X_2) - H(X_1,X_2)$.
 
 \begin{table}[H]
   \centering
-    \caption{Croissement entre comestibilité (X1) et forme du chapeau (X2)}
+    \caption{Croissement entre comestibilité $(X_1)$ et forme du chapeau $(X_2)$}
     \begin{tabular}{|l|l|l|l|}
     \hline
     X1\textbackslash{}X2 & Po & a & Pl \\ \hline
@@ -403,25 +415,59 @@ On calcul l'information mutuelle avec $I(X_1,X_2) = H(X_1) + H(X_2) - H(X_1,X_2)
     N                    & 3  & 1 & 1  \\ \hline
     \end{tabular}
 \end{table}
-Nous trouvons que $I(X1,X2)=H(X1)+H(X2)-H(X1,X2)=0.277$
+Nous trouvons grâce à ce tableau, $I(X_1,X_2)$=$H(X_1)+H(X_2)-H(X_1,X_2)$=0.277.
 \\\\
-En procédant de la même manière pour les cas restant, nous trouvons :
+Pour les variables suivantes, nous avons ces tableaux.
+
+\begin{table}[H]
+  \centering
+    \caption{Croisement entre comestibilité $(X_1)$ et la tige $(X_3)$}
+    \begin{tabular}{|l|c|c|}
+    \hline
+    $X_1 \backslash X_3$ & e & f \\ \hline
+    O                    & 3  & 2  \\ \hline
+    N                    & 1  & 4  \\ \hline
+    \end{tabular}
+\end{table}
+
+\begin{table}[H]
+  \centering
+    \caption{Croisement entre comestibilité $(X_1)$ et la couleur $(X_4)$}
+    \begin{tabular}{|l|l|l|l|}
+      \hline
+      $X_1\backslash X_2$ & b & j & r \\ \hline
+      O                    & 3  & 2 & 0  \\ \hline
+      N                    & 0  & 3 & 2  \\ \hline
+      \end{tabular}
+\end{table}
+
+De la même manière, nous pouvons calculer l'information mutuelle et nous trouvons :
+
+
+
+
 \[
   I(X_1,X_3)=0.106 \hspace{1cm} I(X_1,X_4)=0.357
 \]
 
-Cela veut dire que la variable qui apporte le plus d'information sur la comestibilité du champignon et la couleur du champignon.
-En effet, on se rend compte dans le tableau que les champignons brun sont commestibles alors que les rouges ne le sont pas. Il reste à déterminer pour les champignons jaune.
+
+
+
+Nous pouvons conclure a cette étape que la variable qui apporte le plus d'information sur la comestibilité du champignon est la couleur du champignon. En effet, l'information mutuelle $I(X_1,X_4)$ est la plus élevé.
+\\
+De plus, on se rend compte dans le tableau \ref{tab:champignons} que les champignons brun sont commestibles alors que les rouges ne le sont pas.
+\\
+Traitons le cas des champignons jaune.
     
 \subsubsection{Deuxieme étape : champignons jaune}
-En considerant que les champignons brun, on calcul les information mutuelles suivant les autres variables ($X_2$ et $X_3$)
+En considérant que les champignons jaune, on calcul les informations mutuelles suivant les autres variables ($X_2$ et $X_3$). Nous obtenons les tableaux suivant.
 
 \begin{table}[H]
-  \caption{Tableau de X1,X2 avec champignon jaune}
+  \caption{Tableau de $X_1$,$X_2$ avec champignon jaune}
   \centering
   \begin{tabular}{|l|l|l|l|}
   \hline
-  X1\textbackslash{}X2 & a & pl & po \\ \hline
+  $X_1\backslash X_2$ & a & pl & po \\ \hline
   O                    & 1 & 1  & 0  \\ \hline
   N                    & 1 & 1  & 1  \\ \hline
   \end{tabular}
@@ -429,20 +475,20 @@ En considerant que les champignons brun, on calcul les information mutuelles sui
 
 \begin{table}[H]
   \centering
-  \caption{Tableau de X1,X3 avec champignon jaune}
+  \caption{Tableau de $X_1$,$X_3$ avec champignon jaune}
   \begin{tabular}{|l|l|l|}
   \hline
-  X1\textbackslash{}X3 & e & f \\ \hline
+  $X_1\backslash X_3$ & e & f \\ \hline
   O                    & 1 & 1 \\ \hline
   N                    & 0 & 2 \\ \hline
   \end{tabular}
   \end{table}
-
+Nous calculons les informations mutuelles et nous obtenons les résultats suivant.
 \[
   I(X_1,X_2)=0.118 \hspace{1cm} I(X_1,X_3)=0.223.
 \]
 
-On considère alors la variable $X_3$, celle qui correspond à la tige. Si le champignon est jaune et épais, alors il est commestible. Sinon il faut distinguer entre le champignon d (commestible) et les champignons g,i,j.
+On considère alors la variable $X_3$, celle qui correspond à la tige du champignon. Si le champignon est jaune et épais, alors il est commestible. Sinon il faut distinguer entre le champignon d (commestible) et les champignons g,i,j.
 
 \newpage
 \subsection{Arbre de discrimination}
@@ -498,7 +544,6 @@ Avec toutes les informations mutuelles calculé, on obtient alors l'arbre suivan
   }
 \caption{Arbre de discrimination pour la comestibilité d'un champignon}
 \end{figure}
-
 \end{document}
 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.10)  23 OCT 2024 22:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.10.10)  23 OCT 2024 23:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -667,12 +667,12 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
  (/usr/local/texlive/2024/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-<ssd_logo.png, id=63, 301.125pt x 103.38625pt>
+<ssd_logo.png, id=67, 301.125pt x 103.38625pt>
 File: ssd_logo.png Graphic file (type png)
 <use ssd_logo.png>
 Package pdftex.def Info: ssd_logo.png  used on input line 41.
 (pdftex.def)             Requested size: 250.24199pt x 85.9194pt.
-<logo_um_2022_rouge_RVB.png, id=65, 194.6472pt x 71.0655pt>
+<logo_um_2022_rouge_RVB.png, id=69, 194.6472pt x 71.0655pt>
 File: logo_um_2022_rouge_RVB.png Graphic file (type png)
 <use logo_um_2022_rouge_RVB.png>
 Package pdftex.def Info: logo_um_2022_rouge_RVB.png  used on input line 46.
@@ -684,48 +684,48 @@ Package pdftex.def Info: logo_um_2022_rouge_RVB.png  used on input line 46.
 \openout6 = `DM.toc'.
 
  [2]
-<CE.png, id=99, 793.96625pt x 435.6275pt>
+<CE.png, id=107, 793.96625pt x 435.6275pt>
 File: CE.png Graphic file (type png)
 <use CE.png>
-Package pdftex.def Info: CE.png  used on input line 64.
+Package pdftex.def Info: CE.png  used on input line 77.
 (pdftex.def)             Requested size: 350.33727pt x 192.22176pt.
 
 
-LaTeX Warning: Reference `sec : Annexe' on page 3 undefined on input line 71.
+LaTeX Warning: Reference `sec : Annexe' on page 3 undefined on input line 84.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--85
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 69--85
+Underfull \hbox (badness 10000) in paragraph at lines 82--98
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--97
+Underfull \hbox (badness 10000) in paragraph at lines 82--98
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--110
 
  []
 
 [3 </Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/CE.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 113--124
+Underfull \hbox (badness 10000) in paragraph at lines 126--137
 
  []
 
 [4] [5] [6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 380--385
+Underfull \hbox (badness 10000) in paragraph at lines 392--397
 
  []
 
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 401.
+LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 413.
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 401.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 413.
 
-Underfull \hbox (badness 10000) in paragraph at lines 406--409
+Underfull \hbox (badness 10000) in paragraph at lines 418--421
 
  []
 
@@ -739,21 +739,21 @@ L3 programming layer <2024-02-20>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `DM.out' has not changed.
-(rerunfilecheck)             Checksum: AEB242B070BBB00F2024BA705CCEFEC5;2240.
+(rerunfilecheck)             Checksum: 1D94D01440AC1839AA67CE59C827648A;2332.
  ) 
 Here is how much of TeX's memory you used:
- 25633 strings out of 474116
- 497851 string characters out of 5743681
- 1945187 words of memory out of 5000000
- 47533 multiletter control sequences out of 15000+600000
+ 25640 strings out of 474116
+ 497936 string characters out of 5743681
+ 1947187 words of memory out of 5000000
+ 47537 multiletter control sequences out of 15000+600000
  567785 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,22n,87p,507b,1978s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.pdf" (10 pages, 409120 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on "/Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.pdf" (10 pages, 419966 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 186 compressed objects within 2 object streams
- 42 named destinations out of 1000 (max. 500000)
- 140 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 254 PDF objects out of 1000 (max. 8388607)
+ 201 compressed objects within 3 object streams
+ 45 named destinations out of 1000 (max. 500000)
+ 148 words of extra memory for PDF output out of 10000 (max. 10000000)
 
