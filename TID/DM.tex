@@ -214,6 +214,8 @@ Nous avons donc $\bar{I_C}$ qui est le plus élevé. Ainsi, l'arbre de segmentat
 
 En agrégeant seulement les classes contigues, nous avons 4 possibilités de regroupement binaire de 
 X.
+\\
+ NB : Dans cette partie, nous effecturons nos calculs avec le log népérien.
 
 
 \[
@@ -322,7 +324,7 @@ I(Z_1; Y) = p(Z_1 = 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z_1 = 0\%, Y = \te
 \[
 + p(Z_1 \neq 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z_1 \neq 0\%, Y = \text{Non})}{p(Z_1 \neq 0\%) p(Y = \text{Non})}\right)
 \]
-Nous trouvons alors.
+Nous trouvons alors:
 \[
   I(Z_1; Y)= 0.176
 \]
@@ -378,22 +380,17 @@ On considère le tableau recensant des espèces de champignons suivant 4 variabl
   On cherche à faire un arbre de discrimination qui permet de prédire la comestibilité à partir des autres caractéristiques, tout en étant le plus court possible.
   \\
   \\
-  Pour ce faire, on calcul les informations mutuelles \underline{totales} entre chaque variable.
-  En effet en pratique, nous allons chercher la variables qui informe le plus sur les autres. Cela revient a calculer.
-  \begin{equation}
-    \bar{I}_k = \sum_{n \neq k = 1}^{4} I(X_n,X_k)
-    \label{eq : I bar}
-  \end{equation}
-  et choisir la variable tel que $\bar{I}_k$ est maximale.
+  Pour ce faire, on calcul les informations mutuelles de $X_1$ avec chaque autre variable.
+  En effet, nous allons chercher la variables qui informe le plus sur la commestibilité. Nous effecturons nos calculs avec le log népérien.
 
-où 
+Nous posons pour la suite
 \[
 X_1 = \{Comestible\} \hspace{1cm} X_2 = \{Chapeau\} \hspace{1cm} X_3 = \{Tige\} \hspace{1cm} X_4 = \{Couleur\}
 \]
 
 \subsection{Calculs}
 
-\subsubsection{Détails pour le premier calcul}
+\subsubsection{Premiere étape}
 On calcul l'information mutuelle avec $I(X_1,X_2) = H(X_1) + H(X_2) - H(X_1,X_2)$.
 
 \begin{table}[H]
@@ -410,188 +407,100 @@ Nous trouvons que $I(X1,X2)=H(X1)+H(X2)-H(X1,X2)=0.277$
 \\\\
 En procédant de la même manière pour les cas restant, nous trouvons :
 \[
-  I(X_1,X_3)=0.086 \hspace{1cm} I(X_1,X_4)=0.357 \hspace{1cm} I(X_2,X_3)=0.257 \hspace{1cm} I(X_2,X_4)=0.370 \hspace{1cm} I(X_3,X_4)=0.093
+  I(X_1,X_3)=0.106 \hspace{1cm} I(X_1,X_4)=0.357
 \]
+
+Cela veut dire que la variable qui apporte le plus d'information sur la comestibilité du champignon et la couleur du champignon.
+En effet, on se rend compte dans le tableau que les champignons brun sont commestibles alors que les rouges ne le sont pas. Il reste à déterminer pour les champignons jaune.
     
-\subsection{Informations mutuelles totales}
- On calcul l'information mutuelle, avec la formule \ref{eq : I bar}.
-\[
-  \bar{I_1}=0.720 \hspace{1cm} \bar{I_2}=0.905 \hspace{1cm} \bar{I_3}= 0.437 \hspace{1cm} \bar{I_4}= 0.820
-\]
-Ainsi, $X_2$ ("forme du chapeau") est la variable qui donne le plus d'information sur les autres.
-    \\
-    \\
-    Nous allons alors analyser les information mutuelles en fonction de leur forme
-
-    \subsection{Information mutuelle par forme}
-
-    \subsubsection{Chapeau de forme pointu}
-      On remarque qu'aucun des champigons pointu est commestible. (cf tableau \ref{tab:champignons})
-
-\subsubsection{Chapeau de forme arrondi}
-
-Si on considère que les chapeau de forme arrondi, on obtient les tableaux suivant: 
+\subsubsection{Deuxieme étape : champignons jaune}
+En considerant que les champignons brun, on calcul les information mutuelles suivant les autres variables ($X_2$ et $X_3$)
 
 \begin{table}[H]
+  \caption{Tableau de X1,X2 avec champignon jaune}
   \centering
-  \caption{X1 et X3 avec chapeau arrondi}
-  \begin{tabular}{|l|l|l|}
+  \begin{tabular}{|l|l|l|l|}
   \hline
-  X1\textbackslash{}X3 & E & F \\ \hline
-  O                    & 3 & 0 \\ \hline
-  N                    & 0 & 1 \\ \hline
+  X1\textbackslash{}X2 & a & pl & po \\ \hline
+  O                    & 1 & 1  & 0  \\ \hline
+  N                    & 1 & 1  & 1  \\ \hline
   \end{tabular}
   \end{table}
 
-  \begin{table}[h]
-    \centering
-    \caption{X1 et X4 avec chapeau arrondi}
-    \begin{tabular}{|l|l|l|l|}
-    \hline
-    X1\textbackslash{}X4 & b & j & r \\ \hline
-    O                    & 2 & 1 & 0 \\ \hline
-    N                    & 0 & 1 & 0 \\ \hline
-    \end{tabular}
-    \end{table}
-
-    \begin{table}[H]
-      \centering
-      \caption{X3 et X4 avec chapeau arrondi}
-      \begin{tabular}{|l|l|l|l|}
-      \hline
-      X3\textbackslash{}X4 & b & j & r \\ \hline
-      E                    & 2 & 1 & 0 \\ \hline
-      F                    & 0 & 1 & 0 \\ \hline
-      \end{tabular}
-      \end{table}
-
-Les information mutuelles sont alors :
-\[
-  I(X_1,X_3)=0.562 \hspace{1cm} I(X_1,X_4)=0.216 \hspace{1cm} I(X_3,X_4)=0.216 \hspace{1cm}
-\]
-
-On a alors :
-\[
-\bar{I_1}=I(X_1,X_3) + I(X_1,X_4)= 0.778 
-\]
-\[
-\bar{I_3}=I(X_1,X_3) + I(X_3,X_4)= 0.778
-\]
-\[
-\bar{I_4}=I(X_1,X_4) + I(X_3,X_4)= 0.432
-\]
-
-On choisit pour les chapeaux arrondi la variable $X_3$.
-    
-
-
-\subsubsection{Chapeau de forme plat}
-Si on considère que les chapeaux de formes plat, on obtient les tableaux suivant: 
-
 \begin{table}[H]
   \centering
-  \caption{X1 et X3 avec chapeau plat}
+  \caption{Tableau de X1,X3 avec champignon jaune}
   \begin{tabular}{|l|l|l|}
   \hline
-  X1\textbackslash{}X3 & E & F \\ \hline
-  O                    & 0 & 2 \\ \hline
-  N                    & 0 & 1 \\ \hline
+  X1\textbackslash{}X3 & e & f \\ \hline
+  O                    & 1 & 1 \\ \hline
+  N                    & 0 & 2 \\ \hline
   \end{tabular}
-\end{table}
-
-\begin{table}[h]
-  \centering
-  \caption{X1 et X4 avec chapeau plat}
-  \begin{tabular}{|l|l|l|l|}
-  \hline
-  X1\textbackslash{}X4 & b & j & r \\ \hline
-  O                    & 1 & 1 & 0 \\ \hline
-  N                    & 0 & 1 & 0 \\ \hline
-  \end{tabular}
-\end{table}
-
-\begin{table}[h]
-  \centering
-  \caption{X3 et X4 avec chapeau plat}
-  \begin{tabular}{|l|l|l|l|}
-  \hline
-  X3\textbackslash{}X4 & b & j & r \\ \hline
-  E                    & 0 & 1 & 0 \\ \hline
-  F                    & 1 & 1 & 0 \\ \hline
-  \end{tabular}
-\end{table}
-
-Les information mutuelles sont alors :
-\[
-I(X_1,X_3)= 0;
-\]
-\[
-I(X_1,X_4)= 0.174 ;
-\]
-\[
-I(X_3,X_4)= 0.174 ;
-\]
-
-Donc on obtient :
+  \end{table}
 
 \[
-\bar{I_1}= 0.174
-\]
-\[
-\bar{I_3}= 0.174
-\]
-\[
-\bar{I_4}= 0,348
+  I(X_1,X_2)=0.118 \hspace{1cm} I(X_1,X_3)=0.223.
 \]
 
+On considère alors la variable $X_3$, celle qui correspond à la tige. Si le champignon est jaune et épais, alors il est commestible. Sinon il faut distinguer entre le champignon d (commestible) et les champignons g,i,j.
 
+\newpage
 \subsection{Arbre de discrimination}
 
 Avec toutes les informations mutuelles calculé, on obtient alors l'arbre suivant :
 
+
+
 \begin{figure}[htbp]
   \centering
-  \caption{Arbre de discrimination pour la comestibilité d'un champignon}
   \resizebox{\textwidth}{!}{
   \begin{tikzpicture}[
-    every node/.style={draw, rectangle, rounded corners, align=center, minimum size=6mm, font=\scriptsize},
+    every node/.style={draw, rectangle, rounded corners, align=center, minimum size=10mm, font=\scriptsize},
     level 1/.style={sibling distance=100mm},
-    level 2/.style={sibling distance=100mm},
-    level 3/.style={sibling distance=50mm},
-    level 4/.style={sibling distance=25mm},
-    edge from parent/.style={draw, -{Latex[length=2mm]}, thick},
+    level 2/.style={sibling distance=70mm},
+    level 3/.style={sibling distance=35mm},
+    level 4/.style={sibling distance=40mm},
+    edge from parent/.style={draw, -{Latex[length=5mm]}, thick},
     level distance=35mm
   ]
   
-  \node {Chapeau}
-    child {node {Pointu}
-        child {node {Non comestible}}
+  \node {Couleur}
+    child {node {rouge}
+        child {node {f,h} edge from parent node[right] {Non comestible}}
     }
-    child {node {Arrondi}
-        child {node {Couleur}
-          child {node {Brun}
-              child {node {Comestible}}
-          }
-          child {node {Jaune}
-              child {node {Comestible} edge from parent node[left] {épais}}
-              child {node {Non comestible} edge from parent node[right] {fin}}
-          }
+    child {node {tige}
+        child {node {Epaisse}
+            child {node {b} edge from parent node[right] {Comestible}}
+        }
+        child {node {fine}
+            child {node {type chapeau}
+                child {node {pointu}
+                    child {node {non commestible}}
+                }
+                child {node {arrondi}
+                    child {node {non commestible}}
+                }
+                child {node {plat}
+                    child {node {j}
+                        child {node {non commestible}}
+                    }
+                    child {node {d}
+                        child {node {commestible}}
+                    }
+                }
+            }
         }
     }
-    child {node {Plat}
-        child {node {Couleur}
-          child {node {Brun}
-              child {node {Comestible}}
-          }
-          child {node {Jaune}
-              child {node {Comestible} edge from parent node[left] {Champignon d}}
-              child {node {Non comestible} edge from parent node[right] {Champignon j}}
-          }
-        }
+    child {node {brun}
+        child {node {a,c,e} edge from parent node[right] {Comestible}}
     };
   \end{tikzpicture}
   }
+\caption{Arbre de discrimination pour la comestibilité d'un champignon}
 \end{figure}
+
+\end{document}
+
 
 
 \newpage
