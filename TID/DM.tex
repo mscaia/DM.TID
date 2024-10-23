@@ -217,27 +217,27 @@ X.
 
 
 \[
-Z1 =\{ \{0 \% \} , \{0 - 0.5 \% ,0.5-1 \% ,1-3 \% ,>3 \% \} \}  
+Z_1 =\{ \{0 \% \} , \{0 - 0.5 \% ,0.5-1 \% ,1-3 \% ,>3 \% \} \}  
 \]
 \[
-Z2 =\{ \{0 \% , 0 - 0.5 \%  \} , \{0.5-1 \% ,1-3 \% ,>3 \% \} \}
+Z_2 =\{ \{0 \% , 0 - 0.5 \%  \} , \{0.5-1 \% ,1-3 \% ,>3 \% \} \}
 \]
 \[
-Z3 =\{ \{0 \%, 0 - 0.5 \% ,0.5-1 \%  \} , \{1-3 \% ,>3 \% \} \}
+Z_3 =\{ \{0 \%, 0 - 0.5 \% ,0.5-1 \%  \} , \{1-3 \% ,>3 \% \} \}
 \]
 \[
-Z4 =\{ \{0 \% , 0 - 0.5 \% ,0.5-1 \% ,1-3 \% \} , \{>3 \% \} \}
+Z_4 =\{ \{0 \% , 0 - 0.5 \% ,0.5-1 \% ,1-3 \% \} , \{>3 \% \} \}
 \]
 
 
 L'entropie de chacun de ses recodages se calcule numeriquement et donne :
 
 \[
-H(Z1) = -\left(\frac{29}{72}log_2(\frac{29}{72})+\frac{43}{72}log_2(\frac{43}{72})\right) = 0.973
+H(Z_1) = -\left(\frac{29}{72}log_2(\frac{29}{72})+\frac{43}{72}log_2(\frac{43}{72})\right) = 0.973
 \]
 De la même manière, nous trouvons.
 \[
-H(Z2) = 0.954 \hspace{1cm} H(Z3) = 0.617 \hspace{1cm} H(Z4) = 0.106
+H(Z_2) = 0.954 \hspace{1cm} H(Z_3) = 0.617 \hspace{1cm} H(Z_4) = 0.106
 \]
 Le meilleur recodage est donc le premiers c'est à dire :
 $Z1 =\{ \{0 \% \} , \{0 - 0.5 \% ,0.5-1 \% ,1-3 \% ,>3 \% \} \}$
@@ -248,27 +248,27 @@ $Z1 =\{ \{0 \% \} , \{0 - 0.5 \% ,0.5-1 \% ,1-3 \% ,>3 \% \} \}$
 En procédant de la meme facon, on considère alors 6 cas :
 
 \[
-Z1 =\{ \{0 \% \} , \{0 - 0.5 \%\} ,\{0.5-1 \% ,1-3 \% ,>3 \% \} \}  
+Z_1 =\{ \{0 \% \} , \{0 - 0.5 \%\} ,\{0.5-1 \% ,1-3 \% ,>3 \% \} \}  
 \]
 \[
-  Z2 =\{ \{0 \% \} , \{0 - 0.5\%, 0.5-1 \% \} ,\{1-3 \% ,>3 \% \} \}
+  Z_2 =\{ \{0 \% \} , \{0 - 0.5\%, 0.5-1 \% \} ,\{1-3 \% ,>3 \% \} \}
 \]
 \[
-  Z3 =\{ \{0 \% \} , \{0 - 0.5\%, 0.5-1 \% ,1-3 \%  \} ,\{>3 \% \} \}
+  Z_3 =\{ \{0 \% \} , \{0 - 0.5\%, 0.5-1 \% ,1-3 \%  \} ,\{>3 \% \} \}
 \]
 \[
-  Z4 =\{ \{0 \%, 0 - 0.5\%\} , \{ 0.5-1 \% ,1-3 \%  \} ,\{>3 \% \} \}
+  Z_4 =\{ \{0 \%, 0 - 0.5\%\} , \{ 0.5-1 \% ,1-3 \%  \} ,\{>3 \% \} \}
 \]
 \[
-  Z5 =\{ \{0 \%, 0 - 0.5\%\} , \{ 0.5-1 \% \} ,\{1-3 \% , >3 \% \} \}
+  Z_5 =\{ \{0 \%, 0 - 0.5\%\} , \{ 0.5-1 \% \} ,\{1-3 \% , >3 \% \} \}
 \]
 \[
-  Z6 =\{ \{0 \%, 0 - 0.5\%,  0.5-1 \% \} , \{1-3 \%  \} ,\{>3 \% \} \}
+  Z_6 =\{ \{0 \%, 0 - 0.5\%,  0.5-1 \% \} , \{1-3 \%  \} ,\{>3 \% \} \}
 \]
 \\
 L'entropie est calculé numériquement :
 \[
-H(Z1) = 1.541 \hspace{0.5cm} H(Z2) = 1.462 \hspace{0.5cm} H(Z3) = 1.068 \hspace{0.5cm} H(Z4) = 1.040 \hspace{0,5cm} H(Z5) = 1.320 \hspace{0,5 cm} H(Z6) = 0.684
+H(Z_1) = 1.541 \hspace{0.5cm} H(Z_2) = 1.462 \hspace{0.5cm} H(Z_3) = 1.068 \hspace{0.5cm} H(Z_4) = 1.040 \hspace{0,5cm} H(Z_5) = 1.320 \hspace{0,5 cm} H(Z_6) = 0.684
 \]
 Nous remarquons que le meilleure recodage en 3 variables est $Z1$.
 
@@ -296,7 +296,7 @@ C'est à dire, trouvons le recodage $Z_k$ qui maximise :
   \end{table}
 Ainsi
 \[
-p(Z1 = 0\%) = \frac{29}{72}, \quad p(Z1 \neq 0\%) = \frac{43}{72}
+p(Z_1 = 0\%) = \frac{29}{72}, \quad p(Z_1 \neq 0\%) = \frac{43}{72}
 \]
 \[
 p(Y = \text{Oui}) = \frac{22}{72}, \quad p(Y = \text{Non}) = \frac{50}{72}
@@ -304,44 +304,44 @@ p(Y = \text{Oui}) = \frac{22}{72}, \quad p(Y = \text{Non}) = \frac{50}{72}
 De plus
 
 \[
-p(Z1 = 0\%, Y = \text{Oui}) = \frac{2}{72}, \quad p(Z1 = 0\%, Y = \text{Non}) = \frac{27}{72}
+p(Z_1 = 0\%, Y = \text{Oui}) = \frac{2}{72}, \quad p(Z_1 = 0\%, Y = \text{Non}) = \frac{27}{72}
 \]
 \[
-p(Z1 \neq 0\%, Y = \text{Oui}) = \frac{20}{72}, \quad p(Z1 \neq 0\%, Y = \text{Non}) = \frac{23}{72}
+p(Z_1 \neq 0\%, Y = \text{Oui}) = \frac{20}{72}, \quad p(Z_1 \neq 0\%, Y = \text{Non}) = \frac{23}{72}
 \]
 Nous pouvons calculer l'information mutuelle $I(Z1,Y)$, en utilisant la formule \ref{eq:infomutu}.
 \[
-I(Z1; Y) = p(Z1 = 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z1 = 0\%, Y = \text{Oui})}{p(Z1 = 0\%) p(Y = \text{Oui})}\right) + \ldots
+I(Z_1; Y) = p(Z_1 = 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z_1 = 0\%, Y = \text{Oui})}{p(Z_1 = 0\%) p(Y = \text{Oui})}\right) + \ldots
 \]
 \[
-+ p(Z1 = 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z1 = 0\%, Y = \text{Non})}{p(Z1 = 0\%) p(Y = \text{Non})}\right) + \ldots
++ p(Z_1 = 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z_1 = 0\%, Y = \text{Non})}{p(Z_1 = 0\%) p(Y = \text{Non})}\right) + \ldots
 \]
 \[
-+ p(Z1 \neq 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z1 \neq 0\%, Y = \text{Oui})}{p(Z1 \neq 0\%) p(Y = \text{Oui})}\right) + \ldots
++ p(Z_1 \neq 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z_1 \neq 0\%, Y = \text{Oui})}{p(Z_1 \neq 0\%) p(Y = \text{Oui})}\right) + \ldots
 \]
 \[
-+ p(Z1 \neq 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z1 \neq 0\%, Y = \text{Non})}{p(Z1 \neq 0\%) p(Y = \text{Non})}\right)
++ p(Z_1 \neq 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z_1 \neq 0\%, Y = \text{Non})}{p(Z_1 \neq 0\%) p(Y = \text{Non})}\right)
 \]
 Nous trouvons alors.
 \[
-  I(Z1; Y)= 0.176
+  I(Z_1; Y)= 0.176
 \]
 En faisant de même pour chaque information mutuelle, on trouve : 
 
 \[
-I(Z1,Y) = 0.176
+I(Z_1,Y) = 0.176
 \]
 
 \[
-I(Z2,Y) = 0.091
+I(Z_2,Y) = 0.091
 \]
 
 \[
-I(Z3,Y) = 0.033
+I(Z_3,Y) = 0.033
 \]
 
 \[
-I(Z4,Y) = 0.024
+I(Z_4,Y) = 0.024
 \]
 
 L'information mutuelle la plus grande est le recodage Z1.
