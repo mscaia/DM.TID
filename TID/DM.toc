@@ -13,3 +13,4 @@
 \contentsline {subsubsection}{\numberline {4.2.1}Premiere étape}{8}{subsubsection.4.2.1}%
 \contentsline {subsubsection}{\numberline {4.2.2}Deuxieme étape : champignons jaune}{9}{subsubsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.3}Arbre de discrimination}{10}{subsection.4.3}%
+\contentsline {section}{\numberline {5}ANNEXE}{11}{section.5}%
