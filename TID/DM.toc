@@ -5,7 +5,7 @@
 \contentsline {section}{\numberline {2}Exercice 2}{6}{section.2}%
 \contentsline {subsection}{\numberline {2.1}Recodages}{6}{subsection.2.1}%
 \contentsline {subsubsection}{\numberline {2.1.1}Recodage en 2 variables}{6}{subsubsection.2.1.1}%
-\contentsline {subsubsection}{\numberline {2.1.2}Recodage en 3 variables}{6}{subsubsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2}Recodage en 3 variables}{7}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Le meilleur recodage de X pour prédire Y }{7}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Exercice 3}{9}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Description}{9}{subsection.3.1}%

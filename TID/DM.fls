@@ -353,6 +353,11 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm1
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
 INPUT /usr/local/texlive/2024/texmf-dist/tex/latex/base/omscmr.fd
+INPUT /Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/./main.R
+INPUT /Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/./main.R
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt9.tfm
+INPUT /Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/./main.R
 INPUT /Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.aux
 INPUT /Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.out
 INPUT /Users/utilisateur/Documents/Faculté/Master Maths 2024/M1/Semestre 1/TP BRY/DM1 TID/TID/DM.out
@@ -367,8 +372,10 @@ INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pf
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
+INPUT /usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb

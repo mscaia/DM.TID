@@ -15,7 +15,7 @@ effectifs <- matrix(c(
   1085.8,  1068.4, 1065.5, 987.9, 130.1  # Hommes - Ouvriers
 ), nrow = 12, byrow = TRUE)
 
-# Noms des colonnes (groupes d'âge)
+# Noms des colonnes (groupes d age)
 colnames(effectifs) <- c("15-29","30-39", "40-49", "50-59", "60+")
 
 # Noms des lignes (combinaison sexe et catégorie socioprofessionnelle)
@@ -111,7 +111,7 @@ R1 <- I.A.SC / H.S.C
 R2 <- I.S.AC / H.A.C
 R3 <- I.C.AS / H.A.S
 
-#Le rapport le plus élevé est R3, cela veut dire que l'environnement profesionnel est mieux expliqué par 
+#Le rapport le plus eleve est R3, cela veut dire que l'environnement profesionnel est mieux expliqué par 
 # le sexe et l'age.
 
 # Question 2 
@@ -126,5 +126,5 @@ Ib_C = I.A.C + I.S.C
 # On a donc plussieur classe de recette obtenus.
 # On a Agriculteur Artisans Cadres  Professions intermédiaires Employés Ouvriers
 # Maintenant que l'on choissisent de faire une nouvelle segmentation avec S ou A
-# Il n'y a pas de différence. Donc dans notre cas, le choix d'une deuxième variable de 
+# Il n'y a pas de difference. Donc dans notre cas, le choix d'une deuxieme variable de 
 # segmentation n'a pas d'importance.
