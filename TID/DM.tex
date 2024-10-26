@@ -274,9 +274,7 @@ De plus, lors de la construction de l'abre, le choix de la deuxième variable de
     \end{tikzpicture}
     \caption{Arbre de segmentation binaire}
     \end{center}
-  \end{figure}
-
-
+\end{figure}
 
 
 \newpage
@@ -365,10 +363,9 @@ Il sagit ici de recoder $X$ en réduisant l'incertitude sur $Y$.
 Nous devons donc trouver le $Z_k$ qui maximise l'information mutuelle entre $Z_k$ et Y.
 \\
 C'est à dire, trouvons le recodage $Z_k$ qui maximise :
-\begin{equation}
-  I(Z_k; Y) = \sum_{z\in Z_k} \sum_{y \in Y} p(z, y) \log_2 \left( \frac{p(z, y)}{p(z)p(y)} \right)
-  \label{eq:infomutu}
-\end{equation}
+\[
+I(Z_k,Y) = H(Z_k) + H(Y) - H(Z_k,Y).
+\]
 
 \underline{Détaillons le calcul pour le premier recodage :}
 
@@ -381,53 +378,36 @@ C'est à dire, trouvons le recodage $Z_k$ qui maximise :
   NON & 27/72 & 23/72 \\ \hline
   \end{tabular}
   \end{table}
-Ainsi
-\[
-p(Z_1 = 0\%) = \frac{29}{72}, \quad p(Z_1 \neq 0\%) = \frac{43}{72}
-\]
-\[
-p(Y = \text{Oui}) = \frac{22}{72}, \quad p(Y = \text{Non}) = \frac{50}{72}
-\]
-De plus
 
+
+  On a :
 \[
-p(Z_1 = 0\%, Y = \text{Oui}) = \frac{2}{72}, \quad p(Z_1 = 0\%, Y = \text{Non}) = \frac{27}{72}
+H(Z_1)= -(\frac{29}{72}ln(\frac{29}{72})+\frac{43}{72}ln(\frac{43}{72}))
 \]
 \[
-p(Z_1 \neq 0\%, Y = \text{Oui}) = \frac{20}{72}, \quad p(Z_1 \neq 0\%, Y = \text{Non}) = \frac{23}{72}
-\]
-Nous pouvons calculer l'information mutuelle $I(Z1,Y)$, en utilisant la formule \ref{eq:infomutu}.
-\[
-I(Z_1; Y) = p(Z_1 = 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z_1 = 0\%, Y = \text{Oui})}{p(Z_1 = 0\%) p(Y = \text{Oui})}\right) + \ldots
+H(Y)=-(\frac{22}{72}ln(\frac{22}{72})+\frac{50}{72}ln(\frac{50}{72}))
 \]
 \[
-+ p(Z_1 = 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z_1 = 0\%, Y = \text{Non})}{p(Z_1 = 0\%) p(Y = \text{Non})}\right) + \ldots
+H(Z_1,Y)=-(\frac{2}{72}log(\frac{2}{72})+\frac{27}{72}log(\frac{27}{72})+\frac{20}{72}log(\frac{20}{72})+\frac{23}{72}log(\frac{23}{72}))
 \]
-\[
-+ p(Z_1 \neq 0\%, Y = \text{Oui}) \log_2 \left(\frac{p(Z_1 \neq 0\%, Y = \text{Oui})}{p(Z_1 \neq 0\%) p(Y = \text{Oui})}\right) + \ldots
-\]
-\[
-+ p(Z_1 \neq 0\%, Y = \text{Non}) \log_2 \left(\frac{p(Z_1 \neq 0\%, Y = \text{Non})}{p(Z_1 \neq 0\%) p(Y = \text{Non})}\right)
-\]
+
+
 Nous trouvons alors:
 \[
-  I(Z_1; Y)= 0.176
+  I(Z_1; Y)= 0.102
 \]
 Faisons le même cheminement mais avec les autres variables. Nous obtenons alors les informations mutuelles suivante.
+
 \[
-I(Z_1,Y) = 0.176
+I(Z_2,Y) = 0.063
 \]
 
 \[
-I(Z_2,Y) = 0.091
+I(Z_3,Y) = 0.023
 \]
 
 \[
-I(Z_3,Y) = 0.033
-\]
-
-\[
-I(Z_4,Y) = 0.024
+I(Z_4,Y) = 0.016
 \]
 On observe que l'information mutuelle la plus élevé est $I(Z_1,Y)$. Donc le recodage avec la variable $Z_1$ est le meilleur permettant de prédire $Y$.
 

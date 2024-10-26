@@ -7,10 +7,10 @@
 \contentsline {subsubsection}{\numberline {2.1.1}Recodage en 2 variables}{6}{subsubsection.2.1.1}%
 \contentsline {subsubsection}{\numberline {2.1.2}Recodage en 3 variables}{7}{subsubsection.2.1.2}%
 \contentsline {subsection}{\numberline {2.2}Le meilleur recodage de X pour prédire Y }{7}{subsection.2.2}%
-\contentsline {section}{\numberline {3}Exercice 3}{9}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Description}{9}{subsection.3.1}%
-\contentsline {subsection}{\numberline {3.2}Calculs}{9}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Premiere étape}{9}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Deuxieme étape : champignons jaune}{10}{subsubsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.3}Arbre de discrimination}{11}{subsection.3.3}%
-\contentsline {section}{\numberline {4}ANNEXE}{12}{section.4}%
+\contentsline {section}{\numberline {3}Exercice 3}{8}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Description}{8}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Calculs}{8}{subsection.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.1}Premiere étape}{8}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.2}Deuxieme étape : champignons jaune}{9}{subsubsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.3}Arbre de discrimination}{10}{subsection.3.3}%
+\contentsline {section}{\numberline {4}ANNEXE}{11}{section.4}%

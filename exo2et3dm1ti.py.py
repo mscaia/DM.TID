@@ -62,3 +62,42 @@ print("X1 ET X2",HX1+HX2-HX1X2)
 
 
 # %%
+import numpy as np
+
+H1= -(29/72*np.log(29/72)+43/72*np.log(43/72))
+HY= -(22/72*np.log(22/72)+50/72*np.log(50/72))
+H1Y= -(2/72*np.log(2/72)+27/72*np.log(27/72)+20/72*np.log(20/72)+23/72*np.log(23/72))
+
+print(H1Y)
+print(H1)
+print(HY)
+print(H1+HY-H1Y)
+# %%
+import numpy as np
+HY= -(22/72*np.log(22/72)+50/72*np.log(50/72))
+
+H2= -(45/72*np.log(45/72)+27/72*np.log(27/72))
+H2Y= -(8/72*np.log(8/72)+37/72*np.log(37/72)+14/72*np.log(14/72)+13/72*np.log(13/72))
+
+print(HY)
+print(H2)
+print(H2Y)
+print(HY+H2-H2Y)
+# %%
+import numpy as np
+
+HY= -(22/72*np.log(22/72)+50/72*np.log(50/72))
+
+H3=-(61/72*np.log(61/72)+11/72*np.log(11/72))
+H3Y=-(16/72*np.log(16/72)+45/72*np.log(45/72)+6/72*np.log(6/72)+5/72*np.log(5/72))
+
+print(HY+H3-H3Y)
+# %%
+HY= -(22/72*np.log(22/72)+50/72*np.log(50/72))
+
+H4Y=-(21/72*np.log(21/72)+50/72*np.log(50/72)+1/72*np.log(1/72))
+H4=-(71/72*np.log(71/72)+1/72*np.log(1/72))
+
+print(HY+H4-H4Y)
+
+# %%
