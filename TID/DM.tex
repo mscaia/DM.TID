@@ -124,7 +124,7 @@ Nous obtenons.
 \[
 H(S) = 0,9258  \hspace{2 cm} H(C)= 2,3266
 \]
-A cette étape, nous pouvons interpréter les résulats. L'entropie d'une variable, mesure l'incertitude liée a celle-ci. Donc la variable $C$ est la variable avec l'incertitude la plus élevée.\\
+A cette étape, nous pouvons interpréter les résulats. L'entropie d'une variable mesure l'incertitude liée a celle-ci. Donc la variable $C$ est la variable avec l'incertitude la plus élevée.\\
 Nous allons maintenant calculer les valeurs suivantes : $H(A,S)$, $H(A,C)$ et $H(S,C)$. Pour ce faire, nous déterminerons les tableaux joints correspondants pour chacune de ces paires de variables. Puis nous calculerons l'entropie de ces paires.
 \[
   H(X) = - \sum_{x \in Tableau} P(x) \log_2(P(x))
@@ -185,9 +185,9 @@ I(A,(SC))= 0,029803
 I(S,(CA))=0,029813
 \]
 L’information mutuelle mesure la quantité d’information partagée entre deux variables aléatoires, indiquant dans quelle mesure la connaissance de l’une des variables réduit l’incertitude concernant l’autre. 
-Avec les calculs précédents, nous observons que la connaissance de la catégorie socioprofessionelle réduit le plus l'incertitude sur l'âge et le sexe.\\
+Avec les calculs précédents, nous observons que la connaissance de la catégorie socioprofessionelle permet de mieux réduire l'incertitude sur l'âge et le sexe.\\
 De plus, une information mutuelle proche de 0 suggère une indépendance.\\
-Calculons le rapport entre l'information mutuelle et la variable conditionnée le plus élevé.
+Calculons le rapport le plus élevé entre l'information mutuelle et la variable conditionnée.
 \[
 R_1 = \frac{I(C,(AS))}{H(A,C)}=0,0187
 \]
@@ -197,7 +197,7 @@ R_2 = \frac{I(A,(SC)))}{H(S,C)}=0,0092
 \[
 R_3 = \frac{I(S,(CA)))}{H(A,C)}=0,0066
 \]
-Le rapport $R_1$ est le plus élevé. Donc la variable $C$ modélisé par les deux autres ($A$ et $S$) nous donne le plus d'information.
+Le rapport $R_1$ est le plus élevé. Donc la variable $C$ modélisée par les deux autres ($A$ et $S$) nous donne le plus d'information.
 En d'autres termes, la connaissance de la catégorie socioprofessionnelle et du couple âge, sexe apporte un gain d'information sur le couple âge, catégorie socioprofessionnelle. Et ce gain est de $1,8\%$.
 \subsection{Arbre de segmentation binaire}
 Grâce à la partie \ref{1.1}, nous pouvons calculer les informations mutuelles suivantes.
@@ -210,7 +210,7 @@ I(A,C) = 0,02830
 \[
 I(S,C)= 0,02831
 \]
-Les résultats ci-dessus, permettent de faire les interprétations suivantes. La variable âge et sexe sont proches de l'indépendance. Donc l'une n'influe presque pas sur l'autre. Et l'information mutuelle entre $A$ et $C$ est très proche de celle entre $S$ et $C$.
+Les résultats ci-dessus, permettent de faire les interprétations suivantes. Les variables âge et sexe sont proches de l'indépendance. Donc l'une n'influe presque pas sur l'autre. Et l'information mutuelle entre $A$ et $C$ est très proche de celle entre $S$ et $C$.
 \\
 Calculons maintenant la somme des informations mutuelles de chaque variable avec les deux autres. En pratique, nous souhaitons identifier la variable qui fournit le plus d'informations sur les autres. Cela revient à calculer :
 \begin{equation}
@@ -228,11 +228,11 @@ Ensuite, nous choisirons la variable pour laquelle \( \bar{I}_k \) est maximale.
 \[
 \bar{I_C} = 0,0566
 \]
-Nous avons donc $\bar{I_C}$ qui est le plus élevé. Ainsi, l'arbre de segmentation commencera avec la variable $C$, car elle fournit le plus d'information sur $A$ et $S$.
+Nous avons donc $\bar{I_C}$ qui est le plus élevé. Ainsi, l'arbre de segmentation commencera avec la variable $C$, car elle fournit le plus d'informations sur $A$ et $S$.
 \\
 Ce résultat était attendu, il correspond avec ce qu'on a trouvé dans la partie \ref{1.1}. Cela nous conforte dans l'idée que la variables $C$ nous apporte plus d'informations sur les deux autres.
 \\
-De plus, lors de la construction de l'arbre, le choix de la deuxième variable de segmentations n'a pas d'importance, étant donné qu'il nous reste deux variables de segmentation. 
+De plus, lors de la construction de l'arbre, le choix de la deuxième variable de segmentation n'a pas d'importance, étant donné qu'il nous reste deux variables de segmentation. 
 \newpage
 \begin{figure}
   \begin{center}
@@ -243,7 +243,7 @@ De plus, lors de la construction de l'arbre, le choix de la deuxième variable d
       every node/.style={draw, rounded corners, align=center, fill=white!20}
       ]
     \node {Catégories Socioprofessionnelles}
-      child { node {Agriculture \\ (833)} % Effectif fictif pour Agriculture
+      child { node {Agriculteurs \\ (833)} % Effectif fictif pour Agriculture
         child { node {...} } % Points de suspension pour Agriculture
       }
       child { node {Artisans \\ (2974.2)} % Effectif fictif pour Artisans
@@ -264,7 +264,7 @@ De plus, lors de la construction de l'arbre, le choix de la deuxième variable d
           }
         } % Fin du nœud Homme
       }
-      child { node {Professions Intellectuelles \\ (10096.7)} % Effectif fictif pour Professions Intellectuelles
+      child { node {Professions In \\ (10096.7)} % Effectif fictif pour Professions Intellectuelles
         child { node {...} } % Points de suspension pour Professions Intellectuelles
       }
       child { node {Employés \\ (9003.6)} % Effectif fictif pour Employés
@@ -331,7 +331,7 @@ H(Z_2) = 0.661 \hspace{1cm} H(Z_3) = 0.427 \hspace{1cm} H(Z_4) = 0.073
 \]
 Le meilleur recodage est donc le premiers c'est à dire :
 $Z1 =\{ \{0 \% \} , \{0 - 0.5 \% ,0.5-1 \% ,1-3 \% ,>3 \% \} \}$.\\
-En effet $H(Z_1)$ à l'entropie la plus élevée.
+En effet $H(Z_1)$ a l'entropie la plus élevée.
 
 
 \subsubsection{Recodage en 3 variables}
@@ -368,7 +368,7 @@ Nous remarquons que le meilleur recodage en trois variables est $Z_1$.
 Il s'agit ici de recoder $X$ en réduisant l'incertitude sur $Y$.
 Nous devons donc trouver le $Z_k$ qui maximise l'information mutuelle entre $Z_k$ et Y.
 \\
-C'est à dire, trouvons le recodage $Z_k$ qui maximise :
+C'est-à-dire, trouvons le recodage $Z_k$ qui maximise :
 \[
 I(Z_k,Y) = H(Z_k) + H(Y) - H(Z_k,Y).
 \]
@@ -402,7 +402,7 @@ Nous trouvons alors:
 \[
   I(Z_1, Y)= 0.102
 \]
-Faisons le même cheminement, mais avec les autres variables. Nous obtenons alors les informations mutuelles suivante.
+Faisons le même cheminement, mais avec les autres variables. Nous obtenons alors les informations mutuelles suivantes.
 
 \[
 I(Z_2,Y) = 0.063
@@ -415,7 +415,7 @@ I(Z_3,Y) = 0.023
 \[
 I(Z_4,Y) = 0.016
 \]
-On observe que l'information mutuelle la plus élevée est $I(Z_1,Y)$. Donc le recodage avec la variable $Z_1$ est le meilleur permettant de prédire $Y$. En effet, une information mutuelle élevée indique que les deux variables partagent de l'information en commun. De plus lors d'un recodage de variable, choisir l'information mutuelle la plus élevée, nous donne plus d'information sur $Y$.
+On observe que l'information mutuelle la plus élevée est $I(Z_1,Y)$. Donc le recodage avec la variable $Z_1$ est le meilleur permettant de prédire $Y$. En effet, une information mutuelle élevée indique que les deux variables partagent de l'information en commun. De plus lors d'un recodage de variable, choisir l'information mutuelle la plus élevée nous donne plus d'information sur $Y$.
 
 
 \newpage
@@ -423,7 +423,7 @@ On observe que l'information mutuelle la plus élevée est $I(Z_1,Y)$. Donc le r
 \label{exercice3}
 \subsection{Description}
 
-On considère le tableau recensant des espèces de champignons suivant 4 variables qualitatifs. 
+On considère le tableau recensant des espèces de champignons suivant 4 variables qualitatives. 
 
 \begin{table}[h]
   \centering
@@ -449,7 +449,7 @@ On considère le tableau recensant des espèces de champignons suivant 4 variabl
   On cherche à faire un arbre de discrimination qui permet de prédire la comestibilité à partir des autres caractéristiques, tout en étant le plus court possible.
   \\
   \\
-  Pour ce faire, on calcul les informations mutuelles de $X_1$ avec chaque autre variable.
+  Pour ce faire, on calcule les informations mutuelles de $X_1$ avec chaque autre variable.
   En effet, nous allons chercher la variable qui informe le plus sur la comestibilité. Nous effectuerons nos calculs avec le logarithme népérien.
 
 Nous posons pour la suite.
@@ -460,11 +460,11 @@ X_1 = \{Comestible\} \hspace{1cm} X_2 = \{Chapeau\} \hspace{1cm} X_3 = \{Tige\} 
 \subsection{Calculs}
 
 \subsubsection{Premiere étape}
-On calcul l'information mutuelle avec la formule suivante, $I(X_1,X_2) = H(X_1) + H(X_2) - H(X_1,X_2)$.
+On calcule l'information mutuelle avec la formule suivante, $I(X_1,X_2) = H(X_1) + H(X_2) - H(X_1,X_2)$.
 
 \begin{table}[H]
   \centering
-    \caption{Croissement entre comestibilité $(X_1)$ et forme du chapeau $(X_2)$}
+    \caption{Croisement entre comestibilité $(X_1)$ et forme du chapeau $(X_2)$}
     \begin{tabular}{|l|l|l|l|}
     \hline
     X1\textbackslash{}X2 & Po & a & Pl \\ \hline
@@ -510,14 +510,14 @@ De la même manière, nous pouvons calculer l'information mutuelle et nous trouv
 
 
 
-Nous pouvons conclure à cette étape que la variable qui apporte le plus d'information sur la comestibilité du champignon est sa couleur. En effet, l'information mutuelle $I(X_1,X_4)$ est la plus élevée.
+Nous pouvons conclure à cette étape que la variable qui apporte le plus d'informations sur la comestibilité du champignon est sa couleur. En effet, l'information mutuelle $I(X_1,X_4)$ est la plus élevée.
 \\
 De plus, on se rend compte dans le tableau \ref{tab:champignons} que les champignons bruns sont comestibles alors que les rouges ne le sont pas.
 \\
-Traitons le cas des champignons jaune.
+Traitons le cas des champignons jaunes.
     
-\subsubsection{Deuxieme étape : champignons jaune}
-En considérant seulement les champignons jaunes, on calcul les informations mutuelles suivant les autres variables ($X_2$ et $X_3$). Nous obtenons les tableaux suivants.
+\subsubsection{Deuxieme étape : champignon jaune}
+En considérant seulement les champignons jaunes, on calcule les informations mutuelles suivant les autres variables ($X_2$ et $X_3$). Nous obtenons les tableaux suivants.
 
 \begin{table}[H]
   \caption{Tableau de $X_1$,$X_2$ avec champignon jaune}

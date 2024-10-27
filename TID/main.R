@@ -24,18 +24,17 @@ rownames(effectifs) <- c("Femmes_Agriculteurs", "Femmes_Artisans", "Femmes_Cadre
                          "Hommes_Agriculteurs", "Hommes_Artisans", "Hommes_Cadres", 
                          "Hommes_Professions_inter", "Hommes_Employes", "Hommes_Ouvriers")
 
-cat("Le nombre total de personne interogé", sum(effectifs))
 
-tableau <- effectifs/sum(effectifs)  # On met notre tableau sous forme de pourcentage
+tableau <- effectifs/sum(effectifs)  # On met notre tableau sous forme de pourcentages
 
-#On calcul H(A)
+#On calcule H(A)
 age_effectif <- colSums(tableau)
 H.A = 0
 for(i in 1:length(age_effectif)){
   H.A <- H.A + (-age_effectif[i]*log2(age_effectif[i]))
 }
 H.A <- as.numeric(H.A)
-#On calcul H(S)
+#On calcule H(S)
 femmes_effectif <- sum(rowSums(tableau[1:6,]))
 hommes_effectif <- sum(rowSums(tableau[7:12,]))
 sexe_effectif <- c(femmes_effectif, hommes_effectif)
@@ -43,7 +42,7 @@ H.S = 0
 for(i in 1:length(sexe_effectif)){
   H.S <- H.S + (-sexe_effectif[i]*log2(sexe_effectif[i]))
 }
-#On calcul H(C)
+#On calcule H(C)
 # Calcul de la somme des effectifs pour chaque catégorie socioprofessionnelle
 categorie_effectif <- list(
   Agriculteurs = sum(rowSums(tableau[c(1, 7), ])),       # Agriculteurs (Femmes + Hommes)
@@ -59,7 +58,7 @@ for(i in 1:length(categorie_effectif)){
 }
 #Nous venons de calculer les entropies de chaque variable.
 
-# Calculons les entropie H(A,S), H(A,C) et H(S,C)
+# Calculons les entropies H(A,S), H(A,C) et H(S,C)
 # Pour H(A,S)
 age_femme <- colSums(tableau[1:6,])
 age_homme <- colSums(tableau[7:12,])
@@ -106,13 +105,13 @@ for (i in 1:nrow(tableau)) {
 I.A.SC = H.A + H.S.C - H.A.S.C
 I.S.AC = H.S + H.A.C - H.A.S.C
 I.C.AS = H.C + H.A.S - H.A.S.C
-# On calcul les rapports
+# On calcule les rapports
 R1 <- I.A.SC / H.S.C
 R2 <- I.S.AC / H.A.C
 R3 <- I.C.AS / H.A.S
 
 #Le rapport le plus eleve est R3, cela veut dire que l'environnement profesionnel est mieux expliqué par 
-# le sexe et l'age.
+# le sexe et l age.
 
 # Question 2 
 # En reprenant les calculs plus haut.
@@ -122,9 +121,4 @@ I.S.C = H.S + H.C - H.S.C
 Ib_A = I.A.S + I.A.C
 Ib_S = I.A.S + I.S.C
 Ib_C = I.A.C + I.S.C
-#La variable qui nous apporte le plus d'information est C
-# On a donc plussieur classe de recette obtenus.
-# On a Agriculteur Artisans Cadres  Professions intermédiaires Employés Ouvriers
-# Maintenant que l'on choissisent de faire une nouvelle segmentation avec S ou A
-# Il n'y a pas de difference. Donc dans notre cas, le choix d'une deuxieme variable de 
-# segmentation n'a pas d'importance.
+

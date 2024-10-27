@@ -11,6 +11,6 @@
 \contentsline {subsection}{\numberline {3.1}Description}{8}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Calculs}{8}{subsection.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.1}Premiere étape}{8}{subsubsection.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.2.2}Deuxieme étape : champignons jaune}{9}{subsubsection.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.2.2}Deuxieme étape : champignon jaune}{9}{subsubsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.3}Arbre de discrimination}{10}{subsection.3.3}%
 \contentsline {section}{\numberline {4}ANNEXE}{11}{section.4}%
