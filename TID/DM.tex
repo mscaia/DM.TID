@@ -9,6 +9,7 @@
 \usepackage{hyperref}
 \usepackage{fancybox}
 \usepackage{booktabs}
+\usepackage{array}
 \usepackage{tikz}
 \usepackage[margin=2cm]{geometry}
 \usetikzlibrary{shapes, arrows.meta, positioning}
@@ -307,16 +308,20 @@ Z_4 =\{ \{0 \% , 0 - 0.5 \% ,0.5-1 \% ,1-3 \% \} , \{>3 \% \} \}
 L'entropie de chacun de ses recodages se calcule numériquement.
 \\
 Détaillons le premier calcul. Nous cherchons le tableau associé a $Z_1$, puis nous calculons $H(Z_1)$.
-\begin{table}[H]
+\begin{table}[h!]
   \centering
-    \caption{Tableau entre $Y$ et $Z_1$}
-    \begin{tabular}{|l|c|c|}
-    \hline
-    $Y \backslash Z_1$ & 0\% & \{0 - 0.5 \% ,0.5-1 \% ,1-3 \% ,>3 \% \} \\ \hline
-    O                    & 2  & 20  \\ \hline
-    N                    & 27  & 23  \\ \hline
-    \end{tabular}
-\end{table}
+  \caption{Tableau entre $Y$ et $Z_1$}
+  \begin{tabular}{|c|c|c|}
+  \hline
+  $Y \backslash Z_1$ & 0\% & $\{0-0.5\%, 0.5-1\%, 1-3\%, \geq 3\%\}$ \\
+  \hline
+  O & 2 & 20 \\
+  \hline
+  N & 27 & 23 \\
+  \hline
+  \end{tabular}
+  \end{table}
+
 \[
 H(Z_1) = -\left(\frac{29}{72}ln(\frac{29}{72})+\frac{43}{72}ln(\frac{43}{72})\right) = 0.674
 \]
@@ -389,7 +394,7 @@ H(Z_1)= -\left(\frac{29}{72}ln(\frac{29}{72})+\frac{43}{72}ln(\frac{43}{72})\rig
 H(Y)=-\left(\frac{22}{72}ln(\frac{22}{72})+\frac{50}{72}ln(\frac{50}{72})\right)
 \]
 \[
-H(Z_1,Y)=-\left(\frac{2}{72}log(\frac{2}{72})+\frac{27}{72}log(\frac{27}{72})+\frac{20}{72}log(\frac{20}{72})+\frac{23}{72}log(\frac{23}{72})\right)
+H(Z_1,Y)=-\left(\frac{2}{72}ln(\frac{2}{72})+\frac{27}{72}ln(\frac{27}{72})+\frac{20}{72}ln(\frac{20}{72})+\frac{23}{72}ln(\frac{23}{72})\right)
 \]
 
 
